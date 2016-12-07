@@ -1,0 +1,1686 @@
+{
+   "TvShows":[
+   {
+      "Id": 1,
+      "Name": "Mr. Robot",
+      "Country": "The USA",
+      "Cast": "Rami Malek, Carly Chaikin, Portia Doubleday, Martin Wallström, Christian Slater, Michael Cristofer, Stephanie Corneliussen, Grace Gummer",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "Id": 2,
+      "Name": "Scrubs ",
+      "Country": "The USA",
+      "Cast": "Zach Braff, Sarah Chalke, Donald Faison, Neil Flynn, Ken Jenkins, John C. McGinley, Judy Reyes, Eliza Coupe, Kerry Bishé, Michael Mosley, Dave Franco",
+      "NumberOfSeasons": 9,
+      "NumberOfEpisodes": 182
+   },
+   {
+      "Id": 3,
+      "Name": "Peaky Blinders",
+      "Country": "Great Britain",
+      "Cast": "Cillian Murphy, Sam Neill, Helen McCrory, Paul Anderson, Annabelle Wallis, Iddo Goldberg, Sophie Rundle, Joe Cole, Ned Dennehy, Benjamin Zephaniah, David Dawson, Andy Nyman, Charlie Creed-Miles, Tommy Flanagan, Charlotte Riley, Finn Cole, Natasha O'Keeffe, Aimee-Ffion Edwards, Noah Taylor, Tom Hardy, Gaite Jansen, Alexander Siddig, Packy Lee, Jan Bijvoet, Dina Korzun, Paddy Considine",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 18
+   },
+   {
+      "Id": 4,
+      "Name": "Game Of Thrones",
+      "Country": "The USA",
+      "Cast": "Peter Dinklage, Nikolaj Coster-Waldau, Lena Headey, Emilia Clarke, Kit Harington, Aidan Gillen, Iain Glen, Sophie Turner, Maisie Williams, Alfie Allen, Isaac Hempstead Wright, Rory McCann, Jack Gleeson, Michelle Fairley, Richard Madden, Jason Momoa, Sean Bean, Mark Addy, Harry Lloyd, Conleth Hill, John Bradley, Jerome Flynn, Charles Dance, Sibel Kekilli, James Cosmo, Joe Dempsie, Dean-Charles Chapman, Tom Wlaschiha, Liam Cunningham, Carice van Houten, Natalie Dormer, Stephen Dillane, Rose Leslie, Oona Chaplin, Gwendoline Christie, Hannah Murray, Michael McElhatton, Kristofer Hivju, Iwan Rheon, Michiel Huisman, Nathalie Emmanuel, Indira Varma, Jonathan Pryce",
+      "NumberOfSeasons": 6,
+      "NumberOfEpisodes": 60
+   },
+   {
+      "Id": 5,
+      "Name": "Sherlock",
+      "Country": "Great Britain",
+      "Cast": "Benedict Cumberbatch, Martin Freeman",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "Id": 6,
+      "Name": "Breaking Bad",
+      "Country": "The USA",
+      "Cast": "Bryan Cranston, Anna Gunn, Aaron Paul, Dean Norris, Betsy Brandt, RJ Mitte, Bob Odenkirk, Giancarlo Esposito, Jonathan Banks, Laura Fraser, Jesse Plemons",
+      "NumberOfSeasons": 5,
+      "NumberOfEpisodes": 62
+   },
+   {
+      "Id": 7,
+      "Name": "True Detective",
+      "Country": "The USA",
+      "Cast": "Matthew McConaughey, Woody Harrelson, Michelle Monaghan, Michael Potts, Tory Kittles, Colin Farrell, Rachel McAdams, Taylor Kitsch, Kelly Reilly, Vince Vaughn",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "Id": 8,
+      "Name": "The Big Bang Theory",
+      "Country": "The USA",
+      "Cast": "Johnny Galecki, Jim Parsons, Kaley Cuoco, Simon Helberg, Kunal Nayyar, Sara Gilbert, Mayim Bialik, Melissa Rauch, Kevin Sussman, Laura Spencer",
+      "NumberOfSeasons": 10,
+      "NumberOfEpisodes": 207
+   },
+   {
+      "Id": 9,
+      "Name": "How I Met Your Mother",
+      "Country": "The USA",
+      "Cast": "Josh Radnor, Jason Segel, Cobie Smulders, Neil Patrick Harris, Alyson Hannigan, Cristin Milioti",
+      "NumberOfSeasons": 9,
+      "NumberOfEpisodes": 208
+   },
+   {
+      "Id": 10,
+      "Name": "Prison Break",
+      "Country": "The USA",
+      "Cast": "Dominic Purcell, Wentworth Miller, Robin Tunney, Peter Stormare, Amaury Nolasco, Marshall Allman, Wade Williams, Paul Adelstein, Robert Knepper, Rockmond Dunbar, Sarah Wayne Callies, William Fichtner, Chris Vance, Robert Wisdom, Danay García, Jodi Lyn O'Keefe, Michael Rapaport",
+      "NumberOfSeasons": 4,
+      "NumberOfEpisodes": 81
+   },
+   {
+      "Id": 11,
+      "Name": "Suits",
+      "Country": "The USA",
+      "Cast": "Gabriel Macht, Patrick J. Adams, Rick Hoffman, Meghan Markle, Sarah Rafferty, Gina Torres",
+      "NumberOfSeasons": 6,
+      "NumberOfEpisodes": 86
+   },
+   {
+      "Id": 12,
+      "Name": "Shameless",
+      "Country": "The USA",
+      "Cast": " \nWilliam H. Macy, Emmy Rossum, Justin Chatwin, Ethan Cutkosky, Shanola Hampton, Steve Howey, Emma Kenney, Cameron Monaghan, Jeremy Allen White, Laura Slade Wiggins, Joan Cusack, Emma Greenwell, Zach McGowan, Noel Fisher, Jake McDorman, Emily Bergl, Isidora Goreshter",
+      "NumberOfSeasons": 7,
+      "NumberOfEpisodes": 82
+   },
+   {
+      "Id": 13,
+      "Name": "Boardwalk Empire",
+      "Country": "The USA",
+      "Cast": "Steve Buscemi, Michael Pitt, Kelly Macdonald, Michael Shannon, Shea Whigham, Aleksa Palladino, Michael Stuhlbarg, Stephen Graham, Vincent Piazza, Paz de la Huerta, Michael Kenneth Williams, Anthony Laciura, Paul Sparks, Dabney Coleman, Jack Huston, Gretchen Mol, Charlie Cox, Bobby Cannavale, Ron Livingston, Jeffrey Wright, Ben Rosenfield",
+      "NumberOfSeasons": 5,
+      "NumberOfEpisodes": 56
+   },
+   {
+      "Id": 14,
+      "Name": "Misfits",
+      "Country": "Great Britain",
+      "Cast": "Iwan Rheon, Robert Sheehan, Lauren Socha, Nathan Stewart-Jarrett, Antonia Thomas, Joseph Gilgun, Karla Crome, Nathan McMullen, Natasha O'Keeffe, Matt Stokoe",
+      "NumberOfSeasons": 5,
+      "NumberOfEpisodes": 37
+   },
+   {
+      "Id": 15,
+      "Name": "Lost",
+      "Country": "The USA",
+      "Cast": "Naveen Andrews, Emilie de Ravin, Matthew Fox, Jorge Garcia, Maggie Grace, Josh Holloway, Malcolm David Kelley, Daniel Dae Kim, Yunjin Kim, Evangeline Lilly, Dominic Monaghan, Terry O'Quinn, Harold Perrineau, Ian Somerhalder, Adewale Akinnuoye-Agbaje, Michelle Rodriguez, Cynthia Watros, Henry Ian Cusick, Michael Emerson, Elizabeth Mitchell, Kiele Sanchez, Rodrigo Santoro, Jeremy Davies, Ken Leung, Rebecca Mader, Nestor Carbonell, Jeff Fahey, Zuleikha Robinson, Sam Anderson, L. Scott Caldwell, François Chau, Fionnula Flanagan, John Terry, Sonya Walger",
+      "NumberOfSeasons": 6,
+      "NumberOfEpisodes": 121
+   },
+   {
+      "Id": 16,
+      "Name": "Vikings",
+      "Country": "Ireland, Canada",
+      "Cast": "Travis Fimmel, Katheryn Winnick, Clive Standen, Jessalyn Gilsig, Gustaf Skarsgård, George Blagden, Gabriel Byrne, Alyssa Sutherland, Donal Logue, Alexander Ludwig, Linus Roache, Ben Robson, Kevin Durand, Lothaire Bluteau, John Kavanagh, Peter Franzén, Jasper Pääkkönen, Alex Høgh, Marco Ilsø, David Lindström, Jordan Patrick Smith",
+      "NumberOfSeasons": 4,
+      "NumberOfEpisodes": 39
+   },
+   {
+      "Id": 17,
+      "Name": "Lie To Me",
+      "Country": "The USA",
+      "Cast": "Tim Roth, Kelli Williams, Brendan Hines, Monica Raymund, Hayley McFarland, Mekhi Phifer",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 48
+   },
+   {
+      "Id": 18,
+      "Name": "Better Call Saul",
+      "Country": "The USA",
+      "Cast": "Bob Odenkirk, Jonathan Banks, Rhea Seehorn, Patrick Fabian, Michael Mando, Michael McKean",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "Id": 19,
+      "Name": "Fargo",
+      "Country": "The USA ",
+      "Cast": "Billy Bob Thornton, Allison Tolman, Colin Hanks, Martin Freeman, Kirsten Dunst, Patrick Wilson, Jesse Plemons, Jean Smart, Ted Danson",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "Id": 20,
+      "Name": "Westworld",
+      "Country": "The USA",
+      "Cast": "Evan Rachel Wood, Thandie Newton, Jeffrey Wright, James Marsden, Ben Barnes, Ingrid Bolsø Berdal, Clifton Collins Jr., Luke Hemsworth, Sidse Babett Knudsen, Simon Quarterman, Rodrigo Santoro, Angela Sarafyan, Jimmi Simpson, Tessa Thompson, Shannon Woodward, Ed Harris, Anthony Hopkins",
+      "NumberOfSeasons": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "Id": 21,
+      "Name": "Friends",
+      "Country": "The USA",
+      "Cast": "Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer",
+      "NumberOfSeasons": 10,
+      "NumberOfEpisodes": 236
+   },
+   {
+      "Id": 22,
+      "Name": "The Sopranos",
+      "Country": "The USA",
+      "Cast": "James Gandolfini, Lorraine Bracco, Edie Falco, Michael Imperioli, Dominic Chianese, Steven Van Zandt, Tony Sirico, Robert Iler, Jamie-Lynn Sigler",
+      "NumberOfSeasons": 6,
+      "NumberOfEpisodes": 86
+   },
+   {
+      "Id": 23,
+      "Name": "House Of Cards",
+      "Country": "The USA",
+      "Cast": "Kevin Spacey, Robin Wright, Kate Mara, Corey Stoll, Michael Kelly,Sakina Jaffrey, Kristen Connolly, Sebastian Arcelus, Michel Gill, Nathan Darrow, Rachel Brosnahan, Constance Zimmer, Mahershala Ali, Elizabeth Norment, Sandrine Holt, Jayne Atkinson, Molly Parker, Gerald McRaney, Jimmi Simpson, Elizabeth Marvel, Derek Cecil, Mozhan Marno, Paul Sparks, Neve Campbell, Joel Kinnaman",
+      "NumberOfSeasons": 4,
+      "NumberOfEpisodes": 52
+   },
+   {
+      "Id": 24,
+      "Name": "Jeevs and Wooster",
+      "Country": "United Kingdom",
+      "Cast": "Hugh Laurie, Stephen Fry",
+      "NumberOfSeasons": 4,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "Id": 25,
+      "Name": "Downton Abbey",
+      "Country": "United Kingdom",
+      "Cast": "Hugh Bonneville, Jessica Brown Findlay, Samantha Bond, Laura Carmichael, Jim Carter,Raquel Cassidy, Brendan Coyle,Tom Cullen, Michelle Dockery, Kevin Doyle, Siobhan Finneran,Michael Fox, Joanne Froggatt, Matthew Goode, Harry Hadden-Paton, Thomas Howes, Lily James, Robert James-Collier, Allen Leech, Rose Leslie, Phyllis Logan, Elizabeth McGovern, Sophie McShera, Matt Milne, Lesley Nicol, Amy Nuttall, Julian Ovenden, David Robb, Andrew Scarborough, Maggie Smith, Ed Speleers, Dan Stevens, Cara Theobold, Penelope Wilton",
+      "NumberOfSeasons": 6,
+      "NumberOfEpisodes": 52
+   },
+   {
+      "Id": 26,
+      "Name": "Dexter",
+      "Country": "The USA",
+      "Cast": "Michael C. Hall, Julie Benz, Jennifer Carpenter, Erik King, Lauren Velez, David Zayas, James Remar, C. S. Lee, Desmond Harrington, Geoff Pierson, Aimee Garcia",
+      "NumberOfSeasons": 8,
+      "NumberOfEpisodes": 96
+   },
+   {
+      "Id": 27,
+      "Name": "Twin Peaks",
+      "Country": "The USA",
+      "Cast": "Kyle MacLachlan, Michael Ontkean, Mädchen Amick, Dana Ashbrook, Richard Beymer, Lara Flynn Boyle, Sherilyn Fenn, Warren Frost, Peggy Lipton, James Marshall, Everett McGill, Jack Nance, Ray Wise, Joan Chen, Piper Laurie, Kimmy Robertson, Eric Da Re, Harry Goaz, Michael Horse, Sheryl Lee, Russ Tamblyn, Kenneth Welsh",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 30
+   },
+   {
+      "Id": 28,
+      "Name": "Rome",
+      "Country": "The USA, UK",
+      "Cast": "Kevin McKidd, Ray Stevenson, Ciarán Hinds, Kenneth Cranham, Lindsay Duncan, Tobias Menzies, Kerry Condon, Karl Johnson, Indira Varma, David Bamber, Max Pirkis, Lee Boardman, Nicholas Woodeson, Suzanne Bertish, Paul Jesson, James Purefoy, Polly Walker, Simon Woods, Lyndsey Marshal, Ian McNeice",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "Id": 29,
+      "Name": "Narcos",
+      "Country": "The USA",
+      "Cast": "Wagner Moura, Boyd Holbrook, Pedro Pascal, Joanna Christie, Luis Guzmán, André Mattos, Roberto Urbina, Diego Cataño, Jorge A. Jimenez, Paulina Gaitán, Paulina García, Stephanie Sigman, Damian Alcazar, Martina García",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "Id": 30,
+      "Name": "The Wire",
+      "Country": "The USA",
+      "Cast": "Dominic West, John Doman, Idris Elba, Frankie Faison, Lawrence Gilliard, Jr., Wood Harris, Deirdre Lovejoy, Wendell Pierce, Lance Reddick, Andre Royo, Sonja Sohn, Chris Bauer, Paul Ben-Victor, Clarke Peters, Amy Ryan Aidan Gillen, Jim True-Frost, Robert Wisdom, Seth Gilliam, Domenick Lombardozzi, J. D. Williams, Michael K. Williams, Corey Parker Robinson, Reg E. Cathey, Chad L. Coleman, Jamie Hector, Glynn Turman, Clark Johnson, Tom McCarthy, Gbenga Akinnagbe, Neal Huff, Jermaine Crawford, Tristan Wilds, Michael Kostroff, Michelle Paress, Isiah Whitlock, Jr.",
+      "NumberOfSeasons": 5,
+      "NumberOfEpisodes": 60
+   },
+   {
+      "Id": 31,
+      "Name": "Stranger Things",
+      "Country": "The USA",
+      "Cast": "Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Cara Buono, Noah Schnapp, Joe Keery, Sadie Sink, Dacre Montgomery, Matthew Modine",
+      "NumberOfSeasons": 1,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "Id": 32,
+      "Name": "Spartacus: Blood and Sand",
+      "Country": "The USA",
+      "Cast": "Andy Whitfield, John Hannah, Manu Bennett, Peter Mensah, Viva Bianca, Erin Cummings, Lesley-Ann Brandt, Jai Courtney, Nick E. Tarabay, Katrina Law, Lucy Lawless",
+      "NumberOfSeasons": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "Id": 33,
+      "Name": "The X Files",
+      "Country": "Canada",
+      "Cast": "David Duchovny, Gillian Anderson, Robert Patrick, Annabeth Gish, Mitch Pileggi",
+      "NumberOfSeasons": 10,
+      "NumberOfEpisodes": 208
+   },
+   {
+      "Id": 34,
+      "Name": "Queer As Folk",
+      "Country": "Canada, The USA",
+      "Cast": "Michelle Clunie, Robert Gant, Thea Gill, Gale Harold, Randy Harrison, Scott Lowell, Peter Paige, Chris Potter, Hal Sparks, Sharon Gless, Jack Wetherall",
+      "NumberOfSeasons": 5,
+      "NumberOfEpisodes": 83
+   },
+   {
+      "Id": 35,
+      "Name": "Black Books",
+      "Country": "UK",
+      "Cast": "Dylan Moran, Bill Bailey, Tamsin Greig",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 18
+   },
+   {
+      "Id": 36,
+      "Name": "Homeland",
+      "Country": "The USA ",
+      "Cast": "Claire Danes, Damian Lewis, Morena Baccarin, David Harewood, Diego Klattenhoff, Jackson Pace, Morgan Saylor, Mandy Patinkin, Jamey Sheridan, David Marciano, Navid Negahban, Rupert Friend, Sarita Choudhury,Tracy Letts, F. Murray Abraham, Nazanin Boniadi, Laila Robins, Sebastian Koch, Miranda Otto, Alexander Fehling, Sarah Sokolovic",
+      "NumberOfSeasons": 5,
+      "NumberOfEpisodes": 60
+   },
+   {
+      "Id": 37,
+      "Name": "Supernatural",
+      "Country": "The USA",
+      "Cast": "Jared Padalecki, Jensen Ackles, Katie Cassidy, Lauren Cohan, Misha Collins, Mark Sheppard",
+      "NumberOfSeasons": 12,
+      "NumberOfEpisodes": 248
+   },
+   {
+      "Id": 38,
+      "Name": "Sons of Anarchy",
+      "Country": "The USA",
+      "Cast": "Charlie Hunnam, Katey Sagal, Mark Boone Junior,Kim Coates, Tommy Flanagan, Johnny Lewis, Maggie Siff, Ron Perlman, Ryan Hurst, William Lucking, Theo Rossi, Dayton Callie, Jimmy Smits, Drea De Matteo, David Labrava, Niko Nicotera",
+      "NumberOfSeasons": 7,
+      "NumberOfEpisodes": 92
+   },
+   {
+      "Id": 39,
+      "Name": "The Knick",
+      "Country": "The USA",
+      "Cast": "Clive Owen, Andre Holland, Jeremy Bobb, Juliet Rylance, Eve Hewson, Michael Angarano, Chris Sullivan, Cara Seymour, Eric Johnson, David Fierro, Maya Kazan, Leon Addison Brown,Grainger Hines, Matt Frewer, Zaraah Abrahams, Charles Aitken, LaTonya Borsay, Rachel Korine ,Tom Lipinski, Michael Nathanson",
+      "NumberOfSeasons": 2,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "Id": 40,
+      "Name": "The Bridge",
+      "Country": "Sweden, Denmark",
+      "Cast": "Sofia Helin, Kim Bodnia, Thure Lindhardt",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 30
+   },
+   {
+      "Id": 41,
+      "Name": "Californication",
+      "Country": "The USA",
+      "Cast": "David Duchovny, Natascha McElhone, Pamela Adlon, Madeleine Martin, Madeline Zima, Evan Handler",
+      "NumberOfSeasons": 7,
+      "NumberOfEpisodes": 84
+   },
+   {
+      "Id": 42,
+      "Name": "Luther",
+      "Country": "UK",
+      "Cast": "Idris Elba, Ruth Wilson, Steven Mackintosh, Indira Varma, Paul McGann, Saskia Reeves, Warren Brown, Dermot Crowley, Nikki Amuka-Bird, Aimee-Ffion Edwards, Kierston Wareing, Pam Ferris, David Dawson, Sienna Guillory, David O'Hara, Michael Smiley, Darren Boyd, Rose Leslie, Laura Haddock, Patrick Malahide",
+      "NumberOfSeasons": 4,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "Id": 43,
+      "Name": "M*A*S*H",
+      "Country": "The USA",
+      "Cast": "Alan Alda, Wayne Rogers, McLean Stevenson, Loretta Swit, Larry Linville, Gary Burghoff, Mike Farrell, Harry Morgan, Jamie Farr, William Christopher, David Ogden Stiers",
+      "NumberOfSeasons": 11,
+      "NumberOfEpisodes": 256
+   },
+   {
+      "Id": 44,
+      "Name": "Silicon Valley",
+      "Country": "The USA",
+      "Cast": "Thomas Middleditch, T. J. Miller, Josh Brener, Martin Starr, Kumail Nanjiani, Christopher Evan Welch, Amanda Crew, Zach Woods, Matt Ross, Suzanne Cryer, Jimmy O. Yang",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 28
+   },
+   {
+      "Id": 45,
+      "Name": "Parks and Recreation",
+      "Country": "The USA",
+      "Cast": "Amy Poehler, Rashida Jones, Paul Schneider, Aziz Ansari, Nick Offerman ,Aubrey Plaza, Chris Pratt, Adam Scott, Rob Lowe, Jim O'Heir, Retta, Billy Eichner",
+      "NumberOfSeasons": 7,
+      "NumberOfEpisodes": 125
+   },
+   {
+      "Id": 46,
+      "Name": "Star Trek",
+      "Country": "The USA",
+      "Cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 80
+   },
+   {
+      "Id": 47,
+      "Name": "Hannibal",
+      "Country": "The USA",
+      "Cast": "Hugh Dancy, Mads Mikkelsen, Caroline Dhavernas, Hettienne Park, Laurence Fishburne, Scott Thompson, Aaron Abrams, Gillian Anderson",
+      "NumberOfSeasons": 3,
+      "NumberOfEpisodes": 39
+   },
+   {
+      "Id": 48,
+      "Name": "White Collar",
+      "Country": "The USA",
+      "Cast": "Matt Bomer, Tim DeKay, Willie Garson, Marsha Thomason, Tiffani Thiessen, Natalie Morales, Hilarie Burton, Sharif Atkins",
+      "NumberOfSeasons": 6,
+      "NumberOfEpisodes": 81
+   },
+   {
+      "Id": 49,
+      "Name": "The Office",
+      "Country": "The USA",
+      "Cast": "Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer\nB. J. Novak, Ed Helms, James Spader, Melora Hardin, David Denman, Leslie David Baker, Brian Baumgartner, Kate Flannery, Mindy Kaling, Angela Kinsey ,Paul Lieberstein, Oscar Nunez, Phyllis Smith, Creed Bratton, Craig Robinson, Ellie Kemper, Zach Woods, Amy Ryan, Catherine Tate, Clark Duke, Jake Lacy",
+      "NumberOfSeasons": 9,
+      "NumberOfEpisodes": 201
+   },
+   {
+      "Id": 50,
+      "Name": "Entourage",
+      "Country": "The USA",
+      "Cast": "Kevin Connolly, Adrian Grenier, Kevin Dillon, Jerry Ferrara, Jeremy Pive, Debi Mazar, Perrey Reeves, Rex Lee, Rhys Coiro ,Gary Cole, Emmanuelle Chriqui, Scott Caan",
+      "NumberOfSeasons": 8,
+      "NumberOfEpisodes": 96
+   }
+],
+  "Seasons": [
+   {
+      "TvShowId": 1,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 1,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 11
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 19
+   },
+   {
+      "TvShowId": 2,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 3,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 3,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 3,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 4,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 4,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 4,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 4,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 4,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 4,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 5,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 3
+   },
+   {
+      "TvShowId": 5,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 3
+   },
+   {
+      "TvShowId": 5,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 3
+   },
+   {
+      "TvShowId": 5,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 1
+   },
+   {
+      "TvShowId": 6,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 7
+   },
+   {
+      "TvShowId": 6,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 6,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 6,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 6,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 7,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 7,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 17
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 8,
+      "NumberOfSeason": 10,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 9,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 10,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 10,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 10,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 10,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 11,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 11,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 11,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 11,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 11,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 11,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 12,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 12,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 12,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 12,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 12,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 12,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 12,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 13,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 13,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 13,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 13,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 13,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 14,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 14,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 7
+   },
+   {
+      "TvShowId": 14,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 14,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 14,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 15,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 15,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 15,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 15,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 14
+   },
+   {
+      "TvShowId": 15,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 17
+   },
+   {
+      "TvShowId": 15,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 18
+   },
+   {
+      "TvShowId": 16,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 9
+   },
+   {
+      "TvShowId": 16,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 16,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 16,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "TvShowId": 17,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 17,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 17,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 18,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 18,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 19,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 19,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 20,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 21,
+      "NumberOfSeason": 10,
+      "NumberOfEpisodes": 18
+   },
+   {
+      "TvShowId": 22,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 22,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 22,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 22,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 22,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 22,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 21
+   },
+   {
+      "TvShowId": 23,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 23,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 23,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 23,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 24,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 5
+   },
+   {
+      "TvShowId": 24,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 24,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 24,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 25,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 7
+   },
+   {
+      "TvShowId": 25,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 9
+   },
+   {
+      "TvShowId": 25,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 9
+   },
+   {
+      "TvShowId": 25,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 9
+   },
+   {
+      "TvShowId": 25,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 9
+   },
+   {
+      "TvShowId": 25,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 9
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 26,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 27,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 27,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 27,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 18
+   },
+   {
+      "TvShowId": 28,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 28,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 29,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 29,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 30,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 30,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 30,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 30,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 30,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 31,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 32,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 21
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "TvShowId": 33,
+      "NumberOfSeason": 10,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 34,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 34,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "TvShowId": 34,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 14
+   },
+   {
+      "TvShowId": 34,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 14
+   },
+   {
+      "TvShowId": 34,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 35,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 35,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 35,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 36,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 36,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 36,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 36,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 36,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 36,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 10,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 11,
+      "NumberOfEpisodes": 23
+   },
+   {
+      "TvShowId": 37,
+      "NumberOfSeason": 12,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 38,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 38,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 38,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 38,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 14
+   },
+   {
+      "TvShowId": 38,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 38,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 38,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 39,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 39,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 40,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 40,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 40,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 41,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 41,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 41,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 41,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 41,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 41,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 41,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 42,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 42,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 4
+   },
+   {
+      "TvShowId": 42,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 4
+   },
+   {
+      "TvShowId": 42,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 2
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 10,
+      "NumberOfEpisodes": 21
+   },
+   {
+      "TvShowId": 43,
+      "NumberOfSeason": 11,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 44,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 44,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 44,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 45,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 45,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 45,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 45,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 45,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 45,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 45,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 46,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 30
+   },
+   {
+      "TvShowId": 46,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 26
+   },
+   {
+      "TvShowId": 46,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 47,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 47,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 47,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 48,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 14
+   },
+   {
+      "TvShowId": 48,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 48,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 48,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 16
+   },
+   {
+      "TvShowId": 48,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 13
+   },
+   {
+      "TvShowId": 48,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 6
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 25
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 14
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 26
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 26
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 26
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 24
+   },
+   {
+      "TvShowId": 49,
+      "NumberOfSeason": 9,
+      "NumberOfEpisodes": 22
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 1,
+      "NumberOfEpisodes": 8
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 2,
+      "NumberOfEpisodes": 14
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 3,
+      "NumberOfEpisodes": 20
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 4,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 5,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 6,
+      "NumberOfEpisodes": 12
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 7,
+      "NumberOfEpisodes": 10
+   },
+   {
+      "TvShowId": 50,
+      "NumberOfSeason": 8,
+      "NumberOfEpisodes": 8
+   }
+]
+}

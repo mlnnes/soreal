@@ -1,0 +1,14 @@
+C:\Projects\TeamProject\Logics\bin\Debug\Logics.exe.config
+C:\Projects\TeamProject\Logics\bin\Debug\Logics.exe
+C:\Projects\TeamProject\Logics\bin\Debug\Logics.pdb
+C:\Projects\TeamProject\Logics\bin\Debug\EntityFramework.dll
+C:\Projects\TeamProject\Logics\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\TeamProject\Logics\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\TeamProject\Logics\bin\Debug\EntityFramework.xml
+C:\Projects\TeamProject\Logics\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\TeamProject\Logics\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\TeamProject\Logics\obj\Debug\Logics.csprojResolveAssemblyReference.cache
+C:\Projects\TeamProject\Logics\obj\Debug\Logics.exe
+C:\Projects\TeamProject\Logics\obj\Debug\Logics.pdb
+C:\Projects\TeamProject\Logics\obj\Debug\Logics.Migrations.NewOne5.resources
+C:\Projects\TeamProject\Logics\obj\Debug\Logics.csproj.GenerateResource.Cache
