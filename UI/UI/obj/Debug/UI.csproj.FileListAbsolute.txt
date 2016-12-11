@@ -1,0 +1,12 @@
+C:\Users\PC\Desktop\UI\UI\bin\Debug\UI.exe.config
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\UI\UI\obj\Debug\MainWindow.g.cs
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UIAddNew.g.cs
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UIFirst.g.cs
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UIInfo.g.cs
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UIMain.g.cs
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UISearch.g.cs
+C:\Users\PC\Desktop\UI\UI\obj\Debug\App.g.cs
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UI_MarkupCompile.cache
+C:\Users\PC\Desktop\UI\UI\obj\Debug\UI_MarkupCompile.lref
+C:\Users\PC\Desktop\Team Project\UITeam\UI\UI\bin\Debug\UI.exe.config
