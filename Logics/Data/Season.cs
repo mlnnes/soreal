@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logics.Data
 {
-    class Season
+    public class Season
     {
         public int Id { get; set; }
 

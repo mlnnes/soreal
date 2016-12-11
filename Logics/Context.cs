@@ -9,7 +9,7 @@ using Logics.Data;
 
 namespace Logics
 {
-    class Context : DbContext
+   public class Context : DbContext
     {
         public Context() : base ("localsql")
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Logics.Data
 {
-    class TvShows
+    public class TvShows
     {
         public int Id { get; set; }
 
@@ -22,6 +22,16 @@ namespace Logics.Data
 
         [JsonProperty("NumberOfEpisodes")]
         public int TotalNumberOfEpisodes { get; set; }
+
+        //public TvShows(string name, string country, string cast, 
+        //    int totalNumberOfSeasons, int totalNumberOfEpisodes)
+        //{
+        //    Name = name;
+        //    Country = country;
+        //    Cast = cast;
+        //    TotalNumberOfEpisodes = totalNumberOfEpisodes;
+        //    TotalNumberOfSeasons = totalNumberOfSeasons;
+        //}
 
     }
 }
