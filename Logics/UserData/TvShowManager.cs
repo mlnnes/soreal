@@ -38,9 +38,9 @@ namespace Logics.UserData
         {
             foreach (var item in nowTvShowsList)
             {
-                if (item.TvShow.Name  == nowTvShow.TvShow.Name)
+                if (item.Name  == nowTvShow.Name)
                 {
-                    throw new ArgumentException("This event already exists");
+                    throw new ArgumentException("This tv show is already in the list");
                 }
             }
 
@@ -54,7 +54,7 @@ namespace Logics.UserData
             {
                 if (item.Name == alreadyTvShow.Name)
                 {
-                    throw new ArgumentException("This event already exists");
+                    throw new ArgumentException("This tv show is already in the list");
                 }
             }
 
@@ -73,7 +73,48 @@ namespace Logics.UserData
             }
 
             laterTvShowsList.Add(laterTvShow);
+        }
 
+
+        public void AddSeenEpisode(NowTvShows nowTvShow)
+        {
+            using (var context = new Context())
+            {
+                //var episode = nowTvShow.NowEpisode;
+                //var season = nowTvShow.NowSeason;
+                //var totalSeasons = nowTvShow.TvShow.TotalNumberOfSeasons;
+                var seasonsList = context.Seasons.Where(r => r.TvShow.Name == nowTvShow.Name).ToList();
+
+                foreach (var item in seasonsList)
+                {
+                    //var totalEpisodes = item.NumberOfEpisodes;
+
+                    if (nowTvShow.NowEpisode < item.NumberOfEpisodes)
+                    {
+                        nowTvShow.NowEpisode += 1;
+                    }
+                    else
+                    {
+                        if (nowTvShow.NowSeason < nowTvShow.TotalNumberOfSeasons)
+                        {
+                            nowTvShow.NowSeason += 1;
+                            nowTvShow.NowEpisode = 1;
+                        }
+                        else
+                        {
+                            var alr = new TvShows
+                            {
+                                Name = nowTvShow.Name,
+                                Cast = nowTvShow.Cast,
+                                Country = nowTvShow.Country,
+                                TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons,
+                                TotalNumberOfEpisodes = nowTvShow.TotalNumberOfEpisodes,
+                            };
+                            alreadyTvShowsList.Add(alr);
+                        }
+                    }
+                }
+            }
         }
 
     }
