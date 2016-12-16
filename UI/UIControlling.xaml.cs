@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace UI
 {
     /// <summary>
-    /// Логика взаимодействия для UIFirst.xaml
+    /// Логика взаимодействия для UIControlling.xaml
     /// </summary>
-    public partial class UIFirst : Window
+    public partial class UIControlling : Window
     {
-        public UIFirst()
+        public UIControlling()
         {
             InitializeComponent();
-        }
-
-        private void ButtonFirstAdd_Click(object sender, RoutedEventArgs e)
-        {
-           
         }
     }
 }

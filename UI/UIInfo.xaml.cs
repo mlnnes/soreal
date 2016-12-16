@@ -52,7 +52,7 @@ namespace UI
 
             tvShowManager.AddLaterTvShow(tvShow);
 
-           
+            this.Close();
             
 
         }
@@ -76,7 +76,11 @@ namespace UI
                    }
                    
             ));
+
+            this.Close();
             
         }
+
+       
     }
 }

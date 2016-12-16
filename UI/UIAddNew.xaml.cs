@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Logics;
+using Logics.Data;
+using Logics.UserData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,64 @@ namespace UI
     /// </summary>
     public partial class UIAddNew : Window
     {
-        public UIAddNew()
+
+        TvShowManager tvShowManager;
+        public UIAddNew(TvShowManager _tvShowManager)
         {
+            
             InitializeComponent();
+            tvShowManager = _tvShowManager;
+
+        }
+
+        private void buttonAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
+                int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
+
+
+            tvShowManager.AddNowTvShow(new NowTvShows
+           (
+                  new TvShows
+                  {
+
+
+                      Name = textBoxName.Text,
+                      TotalNumberOfSeasons = int.Parse(textBoxSeasons.Text),
+                      TotalNumberOfEpisodes = int.Parse(textBoxEpisodes.Text),
+                      Country = textBoxCountry.Text,
+                      Cast = textBoxCast.Text
+
+                  }
+                  
+
+           ));
+
+            this.Close();
+
+        }
+
+        private void buttonAddLater_Click(object sender, RoutedEventArgs e)
+        {
+            Repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
+                int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
+
+            var tvShow = new TvShows
+            {
+                Name = textBoxName.Text,
+                TotalNumberOfSeasons = int.Parse(textBoxSeasons.Text),
+                TotalNumberOfEpisodes = int.Parse(textBoxEpisodes.Text),
+                Country = textBoxCountry.Text,
+                Cast = textBoxCast.Text
+
+            };
+
+
+            tvShowManager.AddLaterTvShow(tvShow);
+
+            this.Close();
+
+
         }
     }
 }

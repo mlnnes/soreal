@@ -5,7 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-         Width="400" Height="600"
+       Title="SoReal" Height="600" Width="400"
+        Background="#212421" Icon="Resourses/2.png">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+
+
+        <TextBox Name="textBoxName" HorizontalAlignment="Right"  TextAlignment="Right" Margin="0,10,30,10" BorderThickness="0,0,0,1" Background="#212421" FontSize="46" FontFamily="Raleway" Foreground="#8c8080" Width="234"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Margin="10, 5" BorderThickness="0"  >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="0.5*"/>
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Seasons:" Foreground="#8c8080"/>
+                <TextBox Name="textBoxSeasons" Grid.Row="0" Grid.Column="1" TextAlignment="Right"  HorizontalAlignment="Right" Margin="10, 10,30,12 " Width="50" BorderThickness="0,0,0,1" Background="#212421" FontSize="24" FontFamily="Lato" Foreground="#8c8080"/>
+
+
+                <Label Grid.Row="1" HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Episodes:" Foreground="#8c8080"/>
+                <TextBox Name="textBoxEpisodes" Grid.Row="1" Grid.Column="1" TextAlignment="Right" HorizontalAlignment="Right" Margin="10, 10,30,12 "   Width="75" BorderThickness="0,0,0,1" Background="#212421" FontSize="24" FontFamily="Lato" Foreground="#8c8080"/>
+
+
+                <Label Grid.Row="2" HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Country:" Foreground="#8c8080"/>
+                <TextBox Name="textBoxCountry" TextAlignment="Right" Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Right" Margin="10, 10,30,12 "   Width="100" BorderThickness="0,0,0,1" Background="#212421" FontSize="24" FontFamily="Lato" Foreground="#8c8080"/>
+
+                <Label Grid.Row="3" HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Cast:" Foreground="#8c8080"/>
+                <TextBox Name="textBoxCast" TextWrapping="Wrap" Grid.Row="4"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#212421" FontSize="24" FontFamily="Lato" Foreground="#8c8080" Width="352"/>
+
+                <Button Name="buttonAddNew" Click="buttonAdd_Click" Grid.Column="0" Grid.Row="5" Margin="40,15">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/AddButtonMenu3.png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="buttonAddNewLater" Click="buttonAddLater_Click" Grid.Column="1" Grid.Row="5" Margin="40,15">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resourses/WillButton.png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
+
+<!--Width="400" Height="600"
          Background="#212421">
     <Grid>
 
@@ -44,4 +104,4 @@
             </Grid>
         </ScrollViewer>
     </Grid>
-</Window>
+</Window>-->

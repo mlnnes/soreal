@@ -71,8 +71,14 @@
     <Compile Include="UIAddNew.xaml.cs">
       <DependentUpon>UIAddNew.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIControlling.xaml.cs">
+      <DependentUpon>UIControlling.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UIFirst.xaml.cs">
       <DependentUpon>UIFirst.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIForApixaml.xaml.cs">
+      <DependentUpon>UIForApixaml.xaml</DependentUpon>
     </Compile>
     <Compile Include="UIInfo.xaml.cs">
       <DependentUpon>UIInfo.xaml</DependentUpon>
@@ -99,7 +105,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UIControlling.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UIFirst.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UIForApixaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

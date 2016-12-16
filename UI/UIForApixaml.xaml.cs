@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace UI
 {
     /// <summary>
-    /// Логика взаимодействия для UIFirst.xaml
+    /// Логика взаимодействия для UIForApixaml.xaml
     /// </summary>
-    public partial class UIFirst : Window
+    public partial class UIForApixaml : Window
     {
-        public UIFirst()
+        public UIForApixaml()
         {
             InitializeComponent();
-        }
-
-        private void ButtonFirstAdd_Click(object sender, RoutedEventArgs e)
-        {
-           
         }
     }
 }
