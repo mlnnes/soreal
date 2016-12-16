@@ -21,7 +21,8 @@ namespace UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        TvShowManager tvSgowManager = new TvShowManager();
+        TvShowManager tvShowManager = new TvShowManager();
+
         public MainWindow()
         {
             InitializeComponent();

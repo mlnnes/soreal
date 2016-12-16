@@ -12,13 +12,14 @@ namespace UI
     {
 
         TvShowManager tvShowManager;
+        Repository repository = new Repository();
 
         public UISearch(TvShowManager _tvShowManager)
         {
             tvShowManager = _tvShowManager;
             InitializeComponent();
             listBoxTvShows.Items.Clear();
-            listBoxTvShows.ItemsSource = Repository.ListOfTvShows();
+            listBoxTvShows.ItemsSource = repository.ListOfTvShows();
 
         }
 
@@ -28,9 +29,9 @@ namespace UI
 
             
                 //возможно неэффективно
-                if (Repository.SearchByName(textBoxSearch.Text)!= null)
+                if (repository.SearchByName(textBoxSearch.Text)!= null)
                 {
-                    listBoxTvShows.ItemsSource = Repository.SearchByName(textBoxSearch.Text);
+                    listBoxTvShows.ItemsSource = repository.SearchByName(textBoxSearch.Text);
                 }
                 else
                 {
@@ -77,7 +78,7 @@ namespace UI
 
         private void ButtonAddNew_Click(object sender, RoutedEventArgs e)
         {
-            UIAddNew UIAddNew = new UIAddNew();
+            UIAddNew UIAddNew = new UIAddNew(tvShowManager);
             UIAddNew.Show();
 
         }

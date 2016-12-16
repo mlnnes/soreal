@@ -26,11 +26,11 @@ namespace Logics.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-            var repository = new Repository();
+            var repositorySeed = new RepositorySeed();
 
-            context.TvShows.AddOrUpdate(r => r.Name, repository.TvShows.ToArray());
+            context.TvShows.AddOrUpdate(r => r.Name, repositorySeed.TvShows.ToArray());
 
-            context.Seasons.AddOrUpdate(r => new {r.TvShowId,r.NumberOfSeason}, repository.Seasons.ToArray());
+            context.Seasons.AddOrUpdate(r => new {r.TvShowId,r.NumberOfSeason}, repositorySeed.Seasons.ToArray());
 
         }
     }

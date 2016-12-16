@@ -1,63 +1,23 @@
 ﻿using Logics.Data;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity.Migrations;
-using System.Data.SqlTypes;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json.Serialization;
 
 namespace Logics
 {
-   public class Repository
+    public class Repository
     {
-        private class ReadData
-        {
-            public List<TvShows> TvShows { get; set; }
-
-            public List<Season> Seasons { get; set; }
-
-        }
-
-        ReadData readData;
-
-        public IEnumerable<TvShows> TvShows
-        {
-            get
-            {
-                return readData.TvShows;
-            }
-        }
-
-        public IEnumerable<Season> Seasons
-        {
-            get
-            {
-                return readData.Seasons;
-            }
-        }
-
-        public Repository()
-        {
-            readData = JsonConvert.DeserializeObject<ReadData>(File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + "../../../LOSData1.json"));
-        }
-
-
-        public static List<TvShows> ListOfTvShows()
+        public List<TvShows> ListOfTvShows()
         {
             List<TvShows> tvShowsList = new List<TvShows>();
 
             using (var context = new Context())
             {
-                var result = from tvShow in context.TvShows
-                    select tvShow;
-
-                foreach (var item in result)
+                foreach (var tvShow in context.TvShows.ToList())
                 {
-                    tvShowsList.Add(item);
+                    tvShowsList.Add(tvShow);
                 }
 
                 return tvShowsList;
@@ -65,7 +25,7 @@ namespace Logics
 
         }
 
-        public static List<TvShows> SearchByName(string name)
+        public List<TvShows> SearchByName(string name)
         {
             using (var context = new Context())
             {
@@ -75,7 +35,7 @@ namespace Logics
         }
 
 
-        public static void AddTvShowToDataBase(string name, string country, string cast, 
+        public void AddTvShowToDataBase(string name, string country, string cast,
             int totalNumberOfSeasons, int totalNumberOfEpisodes)
         {
             using (var context = new Context())
@@ -84,7 +44,7 @@ namespace Logics
                 {
                     if (item.Name == name)
                     {
-                       throw new ArgumentException("This TV Show already exists");
+                        throw new ArgumentException("This TV Show already exists");
                     }
                 }
 
@@ -96,10 +56,11 @@ namespace Logics
                     TotalNumberOfSeasons = totalNumberOfSeasons,
                     TotalNumberOfEpisodes = totalNumberOfEpisodes
                 };
+
                 context.TvShows.Add(tvShow);
 
                 context.SaveChanges();
-            }   
+            }
         }
 
     }

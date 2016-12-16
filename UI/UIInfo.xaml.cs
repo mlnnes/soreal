@@ -23,6 +23,7 @@ namespace UI
 
 
         TvShowManager tvShowManager;
+
         public UIInfo(TvShows tvShow, TvShowManager _tvShowManager)
         {
             InitializeComponent();

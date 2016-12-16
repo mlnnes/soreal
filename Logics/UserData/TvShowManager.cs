@@ -9,7 +9,6 @@ namespace Logics.UserData
 {
      public class TvShowManager
     {
-        public event Action<TvShows> OnAdding;
 
         List<TvShows> alreadyTvShowsList = new List<TvShows>();
         
@@ -78,7 +77,6 @@ namespace Logics.UserData
 
             laterTvShowsList.Add(laterTvShow);
 
-            OnAdding?.Invoke(laterTvShow);
         }
 
 

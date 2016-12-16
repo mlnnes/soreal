@@ -24,6 +24,9 @@ namespace UI
     {
 
         TvShowManager tvShowManager;
+        
+        Repository repository = new Repository();
+
         public UIAddNew(TvShowManager _tvShowManager)
         {
             
@@ -34,7 +37,7 @@ namespace UI
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            Repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
+            repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
                 int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
 
 
@@ -61,7 +64,7 @@ namespace UI
 
         private void buttonAddLater_Click(object sender, RoutedEventArgs e)
         {
-            Repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
+            repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
                 int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
 
             var tvShow = new TvShows
