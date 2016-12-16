@@ -14,8 +14,9 @@ namespace UI
 
         public UISearch()
         {
-
+            
             InitializeComponent();
+            listBoxTvShows.Items.Clear();
             listBoxTvShows.ItemsSource = Repository.ListOfTvShows();
 
         }
@@ -23,7 +24,6 @@ namespace UI
         private void ButtonSearch_Click(object sender, RoutedEventArgs e)
         {
 
-            listBoxTvShows.Items.Clear();
 
             try
             {
@@ -31,7 +31,6 @@ namespace UI
             }
             catch (System.Exception)
             {
-
                 listBoxTvShows.Items.Add("Nothing was found");
             }
 

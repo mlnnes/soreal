@@ -29,13 +29,14 @@
         </Button>
 
         <ListBox  x:Name="listBoxTvShows" Foreground="#8c8080" Background="#212421"  Grid.Row="1" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3"  HorizontalAlignment="Center"  BorderThickness="0"  VerticalAlignment="Center"  Margin="10" Height="111" Width="372" SelectionChanged="listBoxTvShows_SelectionChanged"   >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock FontFamily="Lato" FontSize="16" Text="{Binding Name}"/>
 
-            <DataTemplate>
-                <StackPanel Orientation="Vertical">
-                    <TextBlock FontFamily="Lato" FontSize="16" Text="{Binding Name}"/>
-
-                </StackPanel>
-            </DataTemplate>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         <Button x:Name="ButtonAddNew" BorderThickness="0" Grid.Column="0" Grid.Row="2"  Click="ButtonAddNew_Click"  Margin="30,10">
             <Button.Background>
