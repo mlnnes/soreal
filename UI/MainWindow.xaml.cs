@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logics.UserData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace UI
     /// </summary>
     public partial class MainWindow : Window
     {
+        TvShowManager tvSgowManager = new TvShowManager();
         public MainWindow()
         {
             InitializeComponent();
@@ -27,8 +29,8 @@ namespace UI
 
         private void buttonNext_Click(object sender, RoutedEventArgs e)
         {
-            UIFirst UIFirst = new UIFirst();
-            UIFirst.Show();
+            UIMain UIMain = new UIMain();
+            UIMain.Show();
         }
     }
 }

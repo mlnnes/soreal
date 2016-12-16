@@ -12,16 +12,23 @@ namespace Logics.UserData
     {
         public TvShows TvShow { get; set; }
 
+        public string Name { get; set; }
+
         public int NowSeason { get; set; }
 
         public int NowEpisode { get; set; }
         
         public NowTvShows(TvShows nowTvShow)
         {
-            this.TvShow.Name = nowTvShow.Name;
-            this.TvShow.Cast = nowTvShow.Cast;
-            this.TvShow.Country = nowTvShow.Country;
-            this.TvShow.TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons;
+
+            TvShow = nowTvShow;
+
+            Name = nowTvShow.Name;
+
+            //this.TvShow.Name = nowTvShow.Name;
+            //this.TvShow.Cast = nowTvShow.Cast;
+            //this.TvShow.Country = nowTvShow.Country;
+            //this.TvShow.TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons;
             NowSeason = 1;
             NowEpisode = 1;
         }

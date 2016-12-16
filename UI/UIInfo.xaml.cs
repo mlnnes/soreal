@@ -20,11 +20,13 @@ namespace UI
     /// </summary>
     public partial class UIInfo : Window
     {
-        TvShowManager tvShowManager = new TvShowManager();
-        public UIInfo(TvShows tvShow)
+
+
+        TvShowManager tvShowManager;
+        public UIInfo(TvShows tvShow, TvShowManager _tvShowManager)
         {
             InitializeComponent();
-
+            tvShowManager = _tvShowManager;
             labelName.Content = tvShow.Name;
             labelSeasons.Content = tvShow.TotalNumberOfSeasons;
             labelEpisodes.Content = tvShow.TotalNumberOfEpisodes;
@@ -32,21 +34,30 @@ namespace UI
             textBoxCast.Text = tvShow.Cast;
         }
 
+
+        
+
         private void buttonAddLater_Click(object sender, RoutedEventArgs e)
         {
-
-
-            tvShowManager.AddLaterTvShow(new TvShows
+            var tvShow = new TvShows
             {
                 Name = (string)labelName.Content,
                 TotalNumberOfSeasons = (int)labelSeasons.Content,
                 TotalNumberOfEpisodes = (int)labelEpisodes.Content,
                 Country = (string)labelCountry.Content,
-                Cast = (string)labelCountry.Content
+                Cast = (string)textBoxCast.Text
 
-            });
+            };
+
+
+            tvShowManager.AddLaterTvShow(tvShow);
+
+           
+            
 
         }
+
+
 
 
 
@@ -63,8 +74,9 @@ namespace UI
                        Cast = (string)labelCountry.Content
 
                    }
-
+                   
             ));
+            
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using Logics;
 using Logics.Data;
+using Logics.UserData;
 
 namespace UI
 {
@@ -10,11 +11,11 @@ namespace UI
     public partial class UISearch : Window
     {
 
+        TvShowManager tvShowManager;
 
-
-        public UISearch()
+        public UISearch(TvShowManager _tvShowManager)
         {
-            
+            tvShowManager = _tvShowManager;
             InitializeComponent();
             listBoxTvShows.Items.Clear();
             listBoxTvShows.ItemsSource = Repository.ListOfTvShows();
@@ -25,14 +26,18 @@ namespace UI
         {
 
 
-            try
-            {
-                listBoxTvShows.ItemsSource = Repository.SearchByName(textBoxSearch.Text);
-            }
-            catch (System.Exception)
-            {
-                listBoxTvShows.Items.Add("Nothing was found");
-            }
+            
+                //возможно неэффективно
+                if (Repository.SearchByName(textBoxSearch.Text)!= null)
+                {
+                    listBoxTvShows.ItemsSource = Repository.SearchByName(textBoxSearch.Text);
+                }
+                else
+                {
+                    listBoxTvShows.Items.Add("Nothing was found");
+                }
+                
+           
 
 
             //if (Repository.SearchByName() != null)
@@ -64,14 +69,16 @@ namespace UI
         private void listBoxTvShows_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             //не уверен что сработает
-            UIInfo UIInfo = new UIInfo((TvShows)listBoxTvShows.SelectedItem);
+            UIInfo UIInfo = new UIInfo((TvShows)listBoxTvShows.SelectedItem, tvShowManager);
+            UIInfo.Show();
             //listBoxTvShows.SelectedItem
 
         }
 
         private void ButtonAddNew_Click(object sender, RoutedEventArgs e)
         {
-            UIAddNew UiAddNew = new UIAddNew();
+            UIAddNew UIAddNew = new UIAddNew();
+            UIAddNew.Show();
 
         }
 
