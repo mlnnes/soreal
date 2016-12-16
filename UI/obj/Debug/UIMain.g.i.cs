@@ -41,7 +41,39 @@ namespace UI {
     public partial class UIMain : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
+        #line 33 "..\..\UIMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonAdd;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 38 "..\..\UIMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonSeen;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 43 "..\..\UIMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonWillWatch;
+        
+        #line default
+        #line hidden
+        
+        
         #line 48 "..\..\UIMain.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonWatching;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 53 "..\..\UIMain.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListBox listBoxMain;
         
@@ -79,25 +111,45 @@ namespace UI {
             switch (connectionId)
             {
             case 1:
+            this.ButtonAdd = ((System.Windows.Controls.Button)(target));
             
             #line 33 "..\..\UIMain.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            this.ButtonAdd.Click += new System.Windows.RoutedEventHandler(this.ButtonAdd_Click);
             
             #line default
             #line hidden
             return;
             case 2:
+            this.ButtonSeen = ((System.Windows.Controls.Button)(target));
             
             #line 38 "..\..\UIMain.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
+            this.ButtonSeen.Click += new System.Windows.RoutedEventHandler(this.ButtonSeen_Click);
             
             #line default
             #line hidden
             return;
             case 3:
-            this.listBoxMain = ((System.Windows.Controls.ListBox)(target));
+            this.ButtonWillWatch = ((System.Windows.Controls.Button)(target));
+            
+            #line 43 "..\..\UIMain.xaml"
+            this.ButtonWillWatch.Click += new System.Windows.RoutedEventHandler(this.ButtonWillWatch_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 4:
+            this.ButtonWatching = ((System.Windows.Controls.Button)(target));
             
             #line 48 "..\..\UIMain.xaml"
+            this.ButtonWatching.Click += new System.Windows.RoutedEventHandler(this.ButtonWatching_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 5:
+            this.listBoxMain = ((System.Windows.Controls.ListBox)(target));
+            
+            #line 53 "..\..\UIMain.xaml"
             this.listBoxMain.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.listBoxMain_SelectionChanged);
             
             #line default

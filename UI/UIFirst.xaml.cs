@@ -24,9 +24,11 @@ namespace UI
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonFirstAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            UISearch UISearch = new UISearch();
+            UISearch.Show();
+            this.Close();
         }
     }
 }

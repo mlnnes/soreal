@@ -24,17 +24,28 @@ namespace UI
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
             UISearch UISearch = new UISearch();
             UISearch.Show();
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+
+
+        private void ButtonSeen_Click(object sender, RoutedEventArgs e)
         {
-           
+            //то что показывает че в листе син
         }
 
+        private void ButtonWillWatch_Click(object sender, RoutedEventArgs e)
+        {
+            //то что показывает че в листе вилл
+        }
+
+        private void ButtonWatching_Click(object sender, RoutedEventArgs e)
+        {
+            //то что показывает че в листе инг
+        }
     }
 }

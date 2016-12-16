@@ -8,7 +8,7 @@ using Logics.Data;
 
 namespace Logics.UserData
 {
-    class NowTvShows : TvShows
+    public class NowTvShows : TvShows
     {
         //public TvShows TvShow { get; set; }
 

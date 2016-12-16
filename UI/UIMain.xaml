@@ -16,8 +16,8 @@
             <RowDefinition Height="61"/>
             <RowDefinition Height="61"/>
             <RowDefinition Height="61"/>
-            <RowDefinition />
-
+            <RowDefinition Height="61"/>
+            <RowDefinition Height="61"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -27,26 +27,40 @@
 
         <Menu Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="#2f312e">
         </Menu>
-        <Rectangle Grid.Row="1" Grid.RowSpan="5" Fill="#373432"  />
+        <Rectangle Grid.Row="1" Grid.RowSpan="4" Fill="#373432" Margin="0,0,0,-295"  />
         <TextBlock Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" Text="" TextAlignment="Center" Margin="30" FontSize="24" FontFamily="Raleway"/>
 
-        <Button Grid.Column="0" Grid.Row="1" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="Button_Click" >
+        <Button Name="ButtonAdd" Grid.Column="0" Grid.Row="1" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="ButtonAdd_Click" >
             <Button.Background>
                 <ImageBrush ImageSource="Resourses/AddButtonMenu3.png"/>
             </Button.Background>
         </Button>
-        <Button Grid.Column="0" Grid.Row="2" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="Button_Click_1" >
+        <Button Name="ButtonSeen" Grid.Column="0" Grid.Row="2" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="ButtonSeen_Click" >
             <Button.Background>
                 <ImageBrush ImageSource="Resourses/Viewed4.png" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <Button Grid.Column="0" Grid.Row="3" BorderBrush="#212421" BorderThickness="0,0,0,1" >
+        <Button Name="ButtonWillWatch" Grid.Column="0" Grid.Row="3" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="ButtonWillWatch_Click" >
             <Button.Background>
                 <ImageBrush ImageSource="Resourses/WillButton.png"/>
             </Button.Background>
         </Button>
-        <ListBox Name="listBoxMain" Grid.Column="1" Grid.Row="1" Grid.RowSpan="4" Background="#212421" BorderThickness="0" Margin="20" SelectionChanged="listBoxMain_SelectionChanged">
+        <Button Name="ButtonWatching" Grid.Column="0" Grid.Row="4" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="ButtonWatching_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="Resourses/WillButton.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox Name="listBoxMain" Foreground="#8c8080" Grid.Column="1" Grid.Row="1" Grid.RowSpan="5" Background="#212421" BorderThickness="0" Margin="20,20,20,-223" SelectionChanged="listBoxMain_SelectionChanged">
+            <ListBox.ItemTemplate>
 
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock FontFamily="Raleway"  FontSize="14" Text="{Binding Name}"/>
+                        <TextBlock FontFamily="Raleway" FontSize="14" Text="{Binding NowSeason}"/>
+                        <TextBlock FontFamily="Raleway" FontSize="14" Text="{Binding NowEpisode}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
     </Grid>
 </Window>

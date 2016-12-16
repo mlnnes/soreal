@@ -7,7 +7,7 @@ using Logics.Data;
 
 namespace Logics.UserData
 {
-    class TvShowManager
+     public class TvShowManager
     {
         List<TvShows> alreadyTvShowsList = new List<TvShows>();
         

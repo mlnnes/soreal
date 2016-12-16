@@ -40,6 +40,14 @@ namespace UI {
     /// </summary>
     public partial class UIFirst : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 33 "..\..\UIFirst.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonFirstAdd;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -71,9 +79,10 @@ namespace UI {
             switch (connectionId)
             {
             case 1:
+            this.ButtonFirstAdd = ((System.Windows.Controls.Button)(target));
             
             #line 33 "..\..\UIFirst.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            this.ButtonFirstAdd.Click += new System.Windows.RoutedEventHandler(this.ButtonFirstAdd_Click);
             
             #line default
             #line hidden

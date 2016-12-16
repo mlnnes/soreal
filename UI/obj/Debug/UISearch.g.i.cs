@@ -41,9 +41,41 @@ namespace UI {
     public partial class UISearch : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 22 "..\..\UISearch.xaml"
+        #line 23 "..\..\UISearch.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox textBoxSearch;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 24 "..\..\UISearch.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonSearch;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 31 "..\..\UISearch.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListBox listBoxTvShows;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 40 "..\..\UISearch.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonAddNew;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 46 "..\..\UISearch.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ButtonSearchInternet;
         
         #line default
         #line hidden
@@ -79,15 +111,49 @@ namespace UI {
             switch (connectionId)
             {
             case 1:
+            this.textBoxSearch = ((System.Windows.Controls.TextBox)(target));
             
-            #line 21 "..\..\UISearch.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            #line 23 "..\..\UISearch.xaml"
+            this.textBoxSearch.TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.TextBox_TextChanged);
             
             #line default
             #line hidden
             return;
             case 2:
+            this.ButtonSearch = ((System.Windows.Controls.Button)(target));
+            
+            #line 24 "..\..\UISearch.xaml"
+            this.ButtonSearch.Click += new System.Windows.RoutedEventHandler(this.ButtonSearch_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 3:
             this.listBoxTvShows = ((System.Windows.Controls.ListBox)(target));
+            
+            #line 31 "..\..\UISearch.xaml"
+            this.listBoxTvShows.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.listBoxTvShows_SelectionChanged);
+            
+            #line default
+            #line hidden
+            return;
+            case 4:
+            this.ButtonAddNew = ((System.Windows.Controls.Button)(target));
+            
+            #line 40 "..\..\UISearch.xaml"
+            this.ButtonAddNew.Click += new System.Windows.RoutedEventHandler(this.ButtonAddNew_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 5:
+            this.ButtonSearchInternet = ((System.Windows.Controls.Button)(target));
+            
+            #line 46 "..\..\UISearch.xaml"
+            this.ButtonSearchInternet.Click += new System.Windows.RoutedEventHandler(this.ButtonSearchInternet_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;

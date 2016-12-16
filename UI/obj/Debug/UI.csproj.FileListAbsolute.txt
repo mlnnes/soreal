@@ -71,3 +71,6 @@ C:\Projects\TeamProject\UI\obj\Debug\UISearch.baml
 C:\Projects\TeamProject\UI\obj\Debug\UI.g.resources
 C:\Projects\TeamProject\UI\obj\Debug\UI.Properties.Resources.resources
 C:\Projects\TeamProject\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\Team Project\soreal1612\soreal\UI\bin\Debug\UI.exe.config
+C:\Users\PC\Desktop\Team Project\soreal1612\soreal\UI\obj\Debug\UI.exe
+C:\Users\PC\Desktop\Team Project\soreal1612\soreal\UI\obj\Debug\UI.pdb

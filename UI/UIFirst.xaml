@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
        Title="SoReal" Height="600" Width="900"
-        Background="#212421">
+        Background="#212421" Icon="Resourses/2.png">
     <Grid>
         <Grid.Background>
             <ImageBrush/>
@@ -30,7 +30,7 @@
         <Rectangle Grid.Row="1" Grid.RowSpan="5" Fill="#373432"  />
         <TextBlock Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" Text="" TextAlignment="Center" Margin="30" FontSize="24" FontFamily="Raleway"/>
 
-        <Button BorderThickness="0" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="300" Click="Button_Click">
+        <Button Name="ButtonFirstAdd" Click="ButtonFirstAdd_Click" BorderThickness="0" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="300" >
             <Button.Background>
                 <ImageBrush Stretch="UniformToFill" ImageSource="Resourses/ButtonMainAdd.png"/>
             </Button.Background>
