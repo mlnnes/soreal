@@ -8,9 +8,9 @@ using Logics.Data;
 
 namespace Logics.UserData
 {
-    public class NowTvShows : TvShows
+    public class NowTvShows 
     {
-        //public TvShows TvShow { get; set; }
+        public TvShows TvShow { get; set; }
 
         public int NowSeason { get; set; }
 
@@ -18,10 +18,10 @@ namespace Logics.UserData
         
         public NowTvShows(TvShows nowTvShow)
         {
-            this.Name = nowTvShow.Name;
-            this.Cast = nowTvShow.Cast;
-            this.Country = nowTvShow.Country;
-            this.TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons;
+            this.TvShow.Name = nowTvShow.Name;
+            this.TvShow.Cast = nowTvShow.Cast;
+            this.TvShow.Country = nowTvShow.Country;
+            this.TvShow.TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons;
             NowSeason = 1;
             NowEpisode = 1;
         }

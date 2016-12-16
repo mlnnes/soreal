@@ -47,5 +47,10 @@ namespace UI
         {
             //то что показывает че в листе инг
         }
+
+        private void listBoxMain_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

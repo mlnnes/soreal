@@ -25,6 +25,10 @@ namespace UI
             InitializeComponent();
         }
 
-       
+        private void buttonNext_Click(object sender, RoutedEventArgs e)
+        {
+            UIFirst UIFirst = new UIFirst();
+            UIFirst.Show();
+        }
     }
 }

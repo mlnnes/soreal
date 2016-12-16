@@ -38,7 +38,7 @@ namespace Logics.UserData
         {
             foreach (var item in nowTvShowsList)
             {
-                if (item.Name  == nowTvShow.Name)
+                if (item.TvShow.Name  == nowTvShow.TvShow.Name)
                 {
                     throw new ArgumentException("This tv show is already in the list");
                 }
@@ -83,7 +83,7 @@ namespace Logics.UserData
                 //var episode = nowTvShow.NowEpisode;
                 //var season = nowTvShow.NowSeason;
                 //var totalSeasons = nowTvShow.TvShow.TotalNumberOfSeasons;
-                var seasonsList = context.Seasons.Where(r => r.TvShow.Name == nowTvShow.Name).ToList();
+                var seasonsList = context.Seasons.Where(r => r.TvShow.Name == nowTvShow.TvShow.Name).ToList();
 
                 foreach (var item in seasonsList)
                 {
@@ -95,7 +95,7 @@ namespace Logics.UserData
                     }
                     else
                     {
-                        if (nowTvShow.NowSeason < nowTvShow.TotalNumberOfSeasons)
+                        if (nowTvShow.NowSeason < nowTvShow.TvShow.TotalNumberOfSeasons)
                         {
                             nowTvShow.NowSeason += 1;
                             nowTvShow.NowEpisode = 1;
@@ -104,11 +104,11 @@ namespace Logics.UserData
                         {
                             var alr = new TvShows
                             {
-                                Name = nowTvShow.Name,
-                                Cast = nowTvShow.Cast,
-                                Country = nowTvShow.Country,
-                                TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons,
-                                TotalNumberOfEpisodes = nowTvShow.TotalNumberOfEpisodes,
+                                Name = nowTvShow.TvShow.Name,
+                                Cast = nowTvShow.TvShow.Cast,
+                                Country = nowTvShow.TvShow.Country,
+                                TotalNumberOfSeasons = nowTvShow.TvShow.TotalNumberOfSeasons,
+                                TotalNumberOfEpisodes = nowTvShow.TvShow.TotalNumberOfEpisodes,
                             };
                             alreadyTvShowsList.Add(alr);
                         }

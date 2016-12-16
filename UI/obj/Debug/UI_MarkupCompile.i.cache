@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\PC\Desktop\Team Project\soreal1612\soreal\UI\obj\Debug\
+C:\Projects\soreal\UI\obj\Debug\
 UI
 none
 false
 DEBUG;TRACE
-C:\Users\PC\Desktop\Team Project\soreal1612\soreal\UI\App.xaml
+C:\Projects\soreal\UI\App.xaml
 61143944879
 
-141169833644
-181442157653
+14-311636962
+181959190999
 MainWindow.xaml;UIAddNew.xaml;UIFirst.xaml;UIInfo.xaml;UIMain.xaml;UISearch.xaml;
 
-False
+True
 

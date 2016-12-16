@@ -63,6 +63,10 @@
     <Compile Include="Migrations\201612071538083_NewOne5.Designer.cs">
       <DependentUpon>201612071538083_NewOne5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612161109074_Mg.cs" />
+    <Compile Include="Migrations\201612161109074_Mg.Designer.cs">
+      <DependentUpon>201612161109074_Mg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +83,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201612071538083_NewOne5.resx">
       <DependentUpon>201612071538083_NewOne5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612161109074_Mg.resx">
+      <DependentUpon>201612161109074_Mg.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
