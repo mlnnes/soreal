@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="UIForApixaml" Height="300" Width="300">
+        Title="SoReal" Height="250" Width="400"
+        Background="#212421" Icon="Resourses/2.png">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox FontFamily="Lato" Foreground="#8c8080" Name="textBoxSearch" BorderBrush="#8c8080" Background="#212421" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="0,0,0,1" HorizontalAlignment="Left" Width="274" Margin="10,10,0,10"  />
+        <Button BorderThickness="0" Name="ButtonSearchApi"  Grid.Column="2" Margin="10" Click="ButtonSearchApi_Click" >
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Resourses/Search.png"/>
+            </Button.Background>
+
+        </Button>
+
+        <ListBox  x:Name="listBoxTvShowsApi" Foreground="#8c8080" Background="#212421"  Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3"  HorizontalAlignment="Center"  BorderThickness="0"  VerticalAlignment="Center"  Margin="10" Height="155" Width="372" SelectionChanged="listBoxTvShowsApi_SelectionChanged"   >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock FontFamily="Lato" FontSize="16" Text="{Binding Name}"/>
+
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+
     </Grid>
 </Window>

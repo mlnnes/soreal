@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
-        mc:Ignorable="d"
+     mc:Ignorable="d"
        Title="SoReal" Height="600" Width="900"
         Background="#212421" Icon="Resourses/2.png">
     <Grid>
@@ -13,6 +13,7 @@
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
+            <RowDefinition Height="61"/>
             <RowDefinition Height="61"/>
             <RowDefinition Height="61"/>
             <RowDefinition Height="61"/>
@@ -45,7 +46,12 @@
                 <ImageBrush ImageSource="Resourses/WillButton.png"/>
             </Button.Background>
         </Button>
-        <Button Name="ButtonWatching" Grid.Column="0" Grid.Row="4" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="ButtonWatching_Click" >
+        <Button Name="ButtonWatching" Grid.Column="0" Grid.Row="4" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="ButtonWatching_Click" Margin="-3,0,3,0" >
+            <Button.Background>
+                <ImageBrush ImageSource="Resourses/WillButton.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="ButtonDelete" Grid.Column="0" Grid.Row="5" BorderBrush="#212421" BorderThickness="0,0,0,1" Click="ButtonDelete_Click" Margin="-3,0,3,0" >
             <Button.Background>
                 <ImageBrush ImageSource="Resourses/WillButton.png"/>
             </Button.Background>

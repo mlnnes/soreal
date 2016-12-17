@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Logics;
+using Logics.Data;
+using Logics.UserData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,31 @@ namespace UI
     /// </summary>
     public partial class UIForApixaml : Window
     {
-        public UIForApixaml()
+        TvShowManager tvShowManager;
+        public UIForApixaml(TvShowManager _tvShowManager)
         {
             InitializeComponent();
+            tvShowManager = _tvShowManager;
+        }
+
+
+        Repository repository = new Repository();
+        private void ButtonSearchApi_Click(object sender, RoutedEventArgs e)
+        {
+            if (repository.SearchByName(textBoxSearch.Text) != null)
+            {
+                listBoxTvShowsApi.ItemsSource = repository.SearchByName(textBoxSearch.Text);
+            }
+            else
+            {
+                listBoxTvShowsApi.Items.Add("Nothing was found");
+            }
+        }
+
+        private void listBoxTvShowsApi_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UIInfo UIInfo = new UIInfo((TvShows)listBoxTvShowsApi.SelectedItem, tvShowManager);
+            UIInfo.Show();
         }
     }
 }

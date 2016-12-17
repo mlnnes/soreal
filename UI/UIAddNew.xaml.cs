@@ -24,12 +24,12 @@ namespace UI
     {
 
         TvShowManager tvShowManager;
-        
+
         Repository repository = new Repository();
 
         public UIAddNew(TvShowManager _tvShowManager)
         {
-            
+
             InitializeComponent();
             tvShowManager = _tvShowManager;
 
@@ -54,7 +54,7 @@ namespace UI
                       Cast = textBoxCast.Text
 
                   }
-                  
+
 
            ));
 

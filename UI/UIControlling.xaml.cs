@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logics.UserData;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,23 @@ namespace UI
     /// </summary>
     public partial class UIControlling : Window
     {
-        public UIControlling()
+        TvShowManager tvShowManager = new TvShowManager();
+        //вот это плохо вроде
+        NowTvShows nowTvShow;
+        public UIControlling(NowTvShows _nowTvShow)
         {
             InitializeComponent();
+            labelName.Content = _nowTvShow.Name;
+            labelNowEpisode.Content = string.Format(" Seson {0}  episode {1}", _nowTvShow.NowSeason, _nowTvShow.NowEpisode);
+            nowTvShow = _nowTvShow;
+        }
+
+        private void ButtonAddEpisode_Click(object sender, RoutedEventArgs e)
+        {
+            // вроде не сработет
+            tvShowManager.AddSeenEpisode(nowTvShow);
+            labelNowEpisode.Content = string.Format(" Seson {0}  episode {1}", nowTvShow.NowSeason, nowTvShow.NowEpisode);
+
         }
     }
 }

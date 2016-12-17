@@ -34,32 +34,44 @@ namespace UI
 
         }
 
-        
 
-        
+
+
 
         private void ButtonSeen_Click(object sender, RoutedEventArgs e)
         {
-            //то что показывает че в листе син
+
 
             listBoxMain.ItemsSource = tvShowManager.AlreadyTvShowsList;
         }
 
         private void ButtonWillWatch_Click(object sender, RoutedEventArgs e)
         {
-            //то что показывает че в листе вилл
+
             listBoxMain.ItemsSource = tvShowManager.LaterTvShowsList;
         }
 
         private void ButtonWatching_Click(object sender, RoutedEventArgs e)
         {
             listBoxMain.ItemsSource = tvShowManager.NowTvShowsList;
-            //то что показывает че в листе инг
+
         }
 
         private void listBoxMain_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (listBoxMain.SelectedItem is NowTvShows)
+            {
+                UIControlling UIControlling = new UIControlling((NowTvShows)listBoxMain.SelectedItem);
+                UIControlling.Show();
 
+            }
+
+        }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            //вызов метода удаления из листа
+            //кстати можно событие приделать здесь
         }
     }
 }

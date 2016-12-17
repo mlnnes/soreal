@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="UIControlling" Height="300" Width="300">
+       Title="SoReal" Height="250" Width="400"
+        Background="#212421" Icon="Resourses/2.png">
     <Grid>
-        
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+
+        </Grid.RowDefinitions>
+
+        <Label Name="labelName" FontSize="14"  HorizontalAlignment="Right" Margin="10" FontFamily="Raleway" Foreground="#8c8080"/>
+        <Label Grid.Row="1" VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" Content="The last episode was:" Foreground="#8c8080" FontFamily="Lato"/>
+        <Label Name="labelNowEpisode" Grid.Row="1"  VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" Foreground="#8c8080" FontFamily="Lato"/>
+        <Button Name="ButtonAddEpisode" Grid.Row="2" Margin="300,10,10,10" Click="ButtonAddEpisode_Click"/>
     </Grid>
 </Window>
