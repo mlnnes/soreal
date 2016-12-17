@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Logics.API;
 
 namespace UI
 {
@@ -23,6 +24,7 @@ namespace UI
     public partial class UIForApixaml : Window
     {
         TvShowManager tvShowManager;
+
         public UIForApixaml(TvShowManager _tvShowManager)
         {
             InitializeComponent();
@@ -31,11 +33,13 @@ namespace UI
 
 
         Repository repository = new Repository();
+        ApiRequest apiRequests = new ApiRequest();
+
         private void ButtonSearchApi_Click(object sender, RoutedEventArgs e)
         {
-            if (repository.SearchByName(textBoxSearch.Text) != null)
+            if (apiRequests.GetAllResults(textBoxSearch.Text) != null)
             {
-                listBoxTvShowsApi.ItemsSource = repository.SearchByName(textBoxSearch.Text);
+                listBoxTvShowsApi.ItemsSource = apiRequests.GetAllResults(textBoxSearch.Text);
             }
             else
             {

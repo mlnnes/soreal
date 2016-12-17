@@ -85,7 +85,8 @@ namespace UI
 
         private void ButtonSearchInternet_Click(object sender, RoutedEventArgs e)
         {
-
+            UIForApixaml UIApiSearch = new UIForApixaml(tvShowManager);
+            UIApiSearch.Show();
             //надо сделать апи
         }
 

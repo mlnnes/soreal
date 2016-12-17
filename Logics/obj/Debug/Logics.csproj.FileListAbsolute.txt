@@ -72,3 +72,18 @@ C:\Users\PC\Desktop\Team Project\soreal1712\Logics\obj\Debug\Logics.Migrations.M
 C:\Users\PC\Desktop\Team Project\soreal1712\Logics\obj\Debug\Logics.csproj.GenerateResource.Cache
 C:\Users\PC\Desktop\Team Project\soreal1712\Logics\obj\Debug\Logics.exe
 C:\Users\PC\Desktop\Team Project\soreal1712\Logics\obj\Debug\Logics.pdb
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\Logics.exe.config
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\Logics.exe
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\Logics.pdb
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\EntityFramework.dll
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\EntityFramework.xml
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\soreal1712\soreal\Logics\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\soreal1712\soreal\Logics\obj\Debug\Logics.csprojResolveAssemblyReference.cache
+C:\Projects\soreal1712\soreal\Logics\obj\Debug\Logics.Migrations.NewOne5.resources
+C:\Projects\soreal1712\soreal\Logics\obj\Debug\Logics.Migrations.Mg.resources
+C:\Projects\soreal1712\soreal\Logics\obj\Debug\Logics.csproj.GenerateResource.Cache
+C:\Projects\soreal1712\soreal\Logics\obj\Debug\Logics.exe
+C:\Projects\soreal1712\soreal\Logics\obj\Debug\Logics.pdb

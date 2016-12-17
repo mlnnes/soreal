@@ -96,6 +96,7 @@ namespace Logics.UserData
                     if (nowTvShow.NowEpisode < item.NumberOfEpisodes)
                     {
                         nowTvShow.NowEpisode += 1;
+                        break;
                     }
                     else
                     {
@@ -103,6 +104,7 @@ namespace Logics.UserData
                         {
                             nowTvShow.NowSeason += 1;
                             nowTvShow.NowEpisode = 1;
+                            break;
                         }
                         else
                         {
@@ -115,6 +117,7 @@ namespace Logics.UserData
                                 TotalNumberOfEpisodes = nowTvShow.TvShow.TotalNumberOfEpisodes,
                             };
                             alreadyTvShowsList.Add(alr);
+                            break;
                         }
                     }
                 }

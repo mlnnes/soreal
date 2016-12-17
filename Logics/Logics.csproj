@@ -56,6 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\ApiRequest.cs" />
+    <Compile Include="API\DTO\Details\Actor.cs" />
+    <Compile Include="API\DTO\Details\ApiSeason.cs" />
+    <Compile Include="API\DTO\Details\Credits.cs" />
+    <Compile Include="API\DTO\Details\TvShowDetails.cs" />
+    <Compile Include="API\DTO\Search\Result.cs" />
+    <Compile Include="API\DTO\Search\SearchByName.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Data\Season.cs" />
     <Compile Include="Data\TvShows.cs" />
@@ -87,9 +94,7 @@
       <DependentUpon>201612161109074_Mg.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="API\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
