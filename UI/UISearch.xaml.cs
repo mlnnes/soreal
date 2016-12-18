@@ -19,43 +19,11 @@ namespace UI
         {
             tvShowManager = _tvShowManager;
             InitializeComponent();
-            listBoxTvShows.Items.Clear();
-            listBoxTvShows.ItemsSource = repository.ListOfTvShows();
-
-        }
-
-        private void ButtonSearch_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                //возможно неэффективно
-               // if (repository.SearchByName(textBoxSearch.Text) != null)
-               // {
-               
-                // }
-                listBoxTvShows.ItemsSource = repository.SearchByName(textBoxSearch.Text);
-                // }
-                // else
-                // {
-                //    listBoxTvShows.Items.Add("Nothing was found");
-                // }
-            }
-            catch (ArgumentNullException)
-            {
-
-                MessageBox.Show("Enter the name of Tv Show", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
-                textBoxSearch.Clear();
-            }
-
-            catch (ArgumentOutOfRangeException)//не найдено экспешн
-            {
-                MessageBox.Show("Nothing was found:(", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
-                textBoxSearch.Clear();
-            }
-
           
-
         }
+
+       
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             UIMain UIMain = new UIMain();
