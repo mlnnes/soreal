@@ -25,8 +25,7 @@ namespace UI
         {
             InitializeComponent();
             //tvShowManager.OnAdding += tvshow => tvShowManager.LaterTvShowsList.Add(tvshow);
-
-            
+    
         }
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
@@ -36,9 +35,6 @@ namespace UI
 
 
         }
-
-
-
 
 
         private void ButtonSeen_Click(object sender, RoutedEventArgs e)

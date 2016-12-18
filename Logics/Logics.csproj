@@ -74,11 +74,16 @@
     <Compile Include="Migrations\201612161109074_Mg.Designer.cs">
       <DependentUpon>201612161109074_Mg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612181526161_Mg3.cs" />
+    <Compile Include="Migrations\201612181526161_Mg3.Designer.cs">
+      <DependentUpon>201612181526161_Mg3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="RepositorySeed.cs" />
+    <Compile Include="RepositoryUser.cs" />
     <Compile Include="UserData\NowTvShows.cs" />
     <Compile Include="UserData\TvShowManager.cs" />
   </ItemGroup>
@@ -92,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612161109074_Mg.resx">
       <DependentUpon>201612161109074_Mg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612181526161_Mg3.resx">
+      <DependentUpon>201612181526161_Mg3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

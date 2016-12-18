@@ -10,6 +10,8 @@ namespace Logics.UserData
 {
     public class NowTvShows 
     {
+        public int Id { get; set; }
+
         public TvShows TvShow { get; set; }
 
         public string Name { get; set; }
@@ -17,7 +19,7 @@ namespace Logics.UserData
         public int NowSeason { get; set; }
 
         public int NowEpisode { get; set; }
-        
+                
         public NowTvShows(TvShows nowTvShow)
         {
 
@@ -29,10 +31,13 @@ namespace Logics.UserData
             //this.TvShow.Cast = nowTvShow.Cast;
             //this.TvShow.Country = nowTvShow.Country;
             //this.TvShow.TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons;
-            NowSeason = 1;
-            NowEpisode = 1;
+            NowSeason = 0;
+            NowEpisode = 0;
         }
 
-        
+        public NowTvShows()
+        {
+            
+        }
     }
 }

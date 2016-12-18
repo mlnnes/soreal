@@ -9,13 +9,15 @@ namespace Logics.UserData
 {
     public class TvShowManager
     {
+        public List<NowTvShows> alreadyTvShowsList = new List<NowTvShows>();
+        public List<NowTvShows> laterTvShowsList = new List<NowTvShows>();
 
-        List<NowTvShows> alreadyTvShowsList = new List<NowTvShows>();
+        public List<NowTvShows> nowTvShowsList = new List<NowTvShows>();
 
-        List<NowTvShows> laterTvShowsList = new List<NowTvShows>();
-
-        List<NowTvShows> nowTvShowsList = new List<NowTvShows>();
-
+        public TvShowManager()
+        {
+            GetUserDataBase();
+        }
 
         public List<NowTvShows> AlreadyTvShowsList
         {
@@ -50,7 +52,14 @@ namespace Logics.UserData
                 }
 
                 nowTvShowsList.Add(nowTvShow);
+                nowTvShow.NowSeason = 1;
+                nowTvShow.NowEpisode = 1;
 
+                using (Context context = new Context())
+                {
+                    context.NowTvShows.Add(nowTvShow);
+                    context.SaveChanges();
+                }
             }
 
             else
@@ -74,6 +83,11 @@ namespace Logics.UserData
                 }
 
                 AlreadyTvShowsList.Add(alreadyTvShow);
+                using (Context context = new Context())
+                {
+                    context.NowTvShows.Add(alreadyTvShow);
+                    context.SaveChanges();
+                }
             }
             else
             {
@@ -97,6 +111,12 @@ namespace Logics.UserData
                 }
 
                 laterTvShowsList.Add(laterTvShow);
+
+                using (Context context = new Context())
+                {
+                    context.NowTvShows.Add(laterTvShow);
+                    context.SaveChanges();
+                }
 
             }
 
@@ -137,9 +157,15 @@ namespace Logics.UserData
                         {
                             var alr = new NowTvShows(nowTvShow.TvShow);
 
+                            alr.NowSeason = alr.TvShow.TotalNumberOfSeasons + 1;
                             RemoveFromAList(nowTvShow);
+
+
                             AddAlreadyTvShow(alr);
-                            
+                            //удалить из бд
+
+                            context.SaveChanges();
+
                             break;
                         }
                     }
@@ -148,7 +174,7 @@ namespace Logics.UserData
         }
 
 
-       
+
 
         public void RemoveFromAList(NowTvShows nowTvShow)
         {
@@ -166,5 +192,89 @@ namespace Logics.UserData
                 LaterTvShowsList.Remove(nowTvShow);
             }
         }
+
+
+        public void GetUserDataBase()
+        {
+            using (Context context = new Context())
+            {
+                alreadyTvShowsList = context.NowTvShows.Where(r => r.NowSeason > r.TvShow.TotalNumberOfSeasons).ToList();
+                foreach (var item in alreadyTvShowsList)
+                {
+                    foreach (var tvshow in context.TvShows.ToList())
+                    {
+                        if (item.Name == tvshow.Name && tvshow.Id < 51)
+                        {
+                            item.TvShow = tvshow;
+                        }
+                    }
+                }
+
+
+                laterTvShowsList = context.NowTvShows.Where(r => r.NowSeason == 0 && r.NowEpisode == 0).ToList();
+
+                foreach (var item in laterTvShowsList)
+                {
+                    foreach (var tvshow in context.TvShows.ToList())
+                    {
+                        if (item.Name == tvshow.Name && tvshow.Id < 51)
+                        {
+                            item.TvShow = tvshow;
+                        }
+                    }
+                }
+
+
+                nowTvShowsList =
+                    context.NowTvShows.Where(
+                            r =>
+                                r.NowSeason <= r.TvShow.TotalNumberOfSeasons &&
+                                !(r.NowSeason == 0 && r.NowEpisode == 0))
+                        .ToList();
+
+                foreach (var item in nowTvShowsList)
+                {
+                    foreach (var tvshow in context.TvShows.ToList())
+                    {
+                        if (item.Name == tvshow.Name && tvshow.Id < 51)
+                        {
+                            item.TvShow = tvshow;
+                        }
+                    }
+                }
+
+                CheckUniqness();
+
+            }
+        }
+
+
+        public void CheckUniqness()
+        {
+            //foreach (var item in AlreadyTvShowsList)
+            //{
+            //    foreach (var tvshow in NowTvShowsList)
+            //    {
+            //        if (item.Name == tvshow.Name)
+            //        {
+            //            NowTvShowsList.Remove(tvshow);
+
+            //        }
+
+            //    }
+            //}
+
+            foreach (var item in AlreadyTvShowsList)
+            {
+               var result= NowTvShowsList.FindAll(r => r.Name == item.Name)
+                    ;
+
+                foreach (var item2 in result)
+                {
+                    NowTvShowsList.Remove(item2);
+                }
+            }
+        }
+
     }
 }

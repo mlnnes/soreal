@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Logics.UserData;
 using Newtonsoft.Json.Serialization;
 
 namespace Logics
@@ -39,6 +40,8 @@ namespace Logics
                 return readData.Seasons;
             }
         }
+
+        public IEnumerable<NowTvShows> NowTvShows { get; set; }
 
         public RepositorySeed()
         {

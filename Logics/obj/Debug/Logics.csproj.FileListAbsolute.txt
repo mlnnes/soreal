@@ -132,3 +132,4 @@ C:\Users\PC\Desktop\Team Project\16182\Logics\obj\Debug\Logics.Migrations.Mg.res
 C:\Users\PC\Desktop\Team Project\16182\Logics\obj\Debug\Logics.csproj.GenerateResource.Cache
 C:\Users\PC\Desktop\Team Project\16182\Logics\obj\Debug\Logics.exe
 C:\Users\PC\Desktop\Team Project\16182\Logics\obj\Debug\Logics.pdb
+C:\Projects\soreal1812\soreal\Logics\obj\Debug\Logics.Migrations.Mg3.resources

@@ -17,7 +17,10 @@ namespace Logics
             {
                 foreach (var tvShow in context.TvShows.ToList())
                 {
-                    tvShowsList.Add(tvShow);
+                    if (tvShow.Id < 51)
+                    {
+                        tvShowsList.Add(tvShow);
+                    }
                 }
 
                 return tvShowsList;
@@ -31,7 +34,7 @@ namespace Logics
             {
                 using (var context = new Context())
                 {
-                    var result = context.TvShows.Where(r => r.Name == name).ToList();
+                    var result = context.TvShows.Where(r => r.Name == name && r.Id < 51).ToList();
 
                     if (result.Count != 0)
                     {
