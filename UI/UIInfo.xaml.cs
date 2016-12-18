@@ -58,9 +58,9 @@ namespace UI
                 this.Close();
             }
 
-            catch (ArgumentException)// такой сериал уже есть эксепшн
+            catch (ArgumentException exception)// такой сериал уже есть эксепшн
             {
-                MessageBox.Show("This TV Show has already been added", "Error!", MessageBoxButton.OK,
+                MessageBox.Show(exception.Message, "Error!", MessageBoxButton.OK,
                     MessageBoxImage.Error);
             }
 

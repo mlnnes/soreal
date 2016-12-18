@@ -99,33 +99,38 @@ namespace Logics.UserData
 
         public void AddLaterTvShow(NowTvShows laterTvShow)
         {
-
-            if (laterTvShow != null)
+            if (NowTvShowsList.FindAll(r => r.Name == laterTvShow.Name).Count == 1)
             {
-                foreach (var item in laterTvShowsList)
+                throw new ArgumentException("This Tv Show is in progress now");
+            }
+
+                if (laterTvShow != null)
                 {
-                    if (item.Name == laterTvShow.Name)
+                    foreach (var item in laterTvShowsList)
                     {
-                        throw new ArgumentException();
+                        if (item.Name == laterTvShow.Name)
+                        {
+                            throw new ArgumentException("This Tv Show has already been added");
+                        }
                     }
+
+                    laterTvShowsList.Add(laterTvShow);
+
+                    using (Context context = new Context())
+                    {
+                        context.NowTvShows.Add(laterTvShow);
+                        context.SaveChanges();
+                    }
+
                 }
 
-                laterTvShowsList.Add(laterTvShow);
+                else
 
-                using (Context context = new Context())
                 {
-                    context.NowTvShows.Add(laterTvShow);
-                    context.SaveChanges();
+                    throw new FormatException();
                 }
-
             }
-
-            else
-
-            {
-                throw new FormatException();
-            }
-        }
+        
 
         public void AddSeenEpisode(NowTvShows nowTvShow)
         {
