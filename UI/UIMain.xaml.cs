@@ -25,12 +25,15 @@ namespace UI
         {
             InitializeComponent();
             //tvShowManager.OnAdding += tvshow => tvShowManager.LaterTvShowsList.Add(tvshow);
+
+            
         }
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
             UISearch UISearch = new UISearch(tvShowManager);
             UISearch.Show();
+
 
         }
 
@@ -54,6 +57,7 @@ namespace UI
         {
             listBoxMain.ItemsSource = tvShowManager.NowTvShowsList;
 
+
         }
 
         private void listBoxMain_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -62,6 +66,7 @@ namespace UI
             {
                 UIControlling UIControlling = new UIControlling((NowTvShows)listBoxMain.SelectedItem, tvShowManager);
                 UIControlling.Show();
+                UIControlling.OnAdd += tvShow => listBoxMain.Items.Refresh();
 
             }
 

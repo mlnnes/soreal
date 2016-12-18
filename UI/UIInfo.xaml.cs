@@ -28,7 +28,7 @@ namespace UI
         {
             InitializeComponent();
             tvShowManager = _tvShowManager;
-            labelName.Content = tvShow.Name;
+            labelName.Text = tvShow.Name;
             labelSeasons.Content = tvShow.TotalNumberOfSeasons;
             labelEpisodes.Content = tvShow.TotalNumberOfEpisodes;
             labelCountry.Content = tvShow.Country;
@@ -44,7 +44,7 @@ namespace UI
             {
                 var tvShow = new NowTvShows(new TvShows
                 {
-                    Name = (string) labelName.Content,
+                    Name = (string) labelName.Text,
                     TotalNumberOfSeasons = (int) labelSeasons.Content,
                     TotalNumberOfEpisodes = (int) labelEpisodes.Content,
                     Country = (string) labelCountry.Content,
@@ -68,27 +68,30 @@ namespace UI
 
 
 
-
+        public event Action<NowTvShows> OnAddNewToList;
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                tvShowManager.AddNowTvShow(new NowTvShows
+                NowTvShows nowTvShow = new NowTvShows
                 (
                     new TvShows
                     {
-                        Name = (string) labelName.Content,
-                        TotalNumberOfSeasons = (int) labelSeasons.Content,
-                        TotalNumberOfEpisodes = (int) labelEpisodes.Content,
-                        Country = (string) labelCountry.Content,
-                        Cast = (string) labelCountry.Content
+                        Name = (string)labelName.Text,
+                        TotalNumberOfSeasons = (int)labelSeasons.Content,
+                        TotalNumberOfEpisodes = (int)labelEpisodes.Content,
+                        Country = (string)labelCountry.Content,
+                        Cast = (string)labelCountry.Content
 
                     }
 
-                ));
+                );
+                tvShowManager.AddNowTvShow(nowTvShow);
 
                 this.Close();
+
+                OnAddNewToList?.Invoke(nowTvShow);
             }
 
             catch (ArgumentException)// такой сериал уже есть эксепшн

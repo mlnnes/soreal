@@ -82,7 +82,7 @@ namespace UI
         {
             UIForApixaml UIApiSearch = new UIForApixaml(tvShowManager);
             UIApiSearch.Show();
-            //надо сделать апи
+            this.Close();
         }
 
         

@@ -11,15 +11,15 @@
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
+            <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
 
         </Grid.ColumnDefinitions>
 
-
-        <Label Name="labelName" HorizontalAlignment="Right" Margin="50 ,10" Background="#212421" FontSize="30" FontFamily="Raleway"  Foreground="#8c8080"/>
+        <TextBlock Name="labelName" TextWrapping="Wrap" Margin="10" TextAlignment="Right" Background="#212421" FontSize="30" FontFamily="Raleway"  Foreground="#8c8080"/>
+        <!--<Label Name="labelName" HorizontalAlignment="Right" Margin="50 ,10" Background="#212421" FontSize="30" FontFamily="Raleway"  Foreground="#8c8080"/>-->
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1" Margin="10, 5" BorderThickness="0"  >
             <Grid>
                 <Grid.RowDefinitions>
@@ -27,7 +27,8 @@
                     <RowDefinition Height="0.5*"/>
                     <RowDefinition Height="0.5*"/>
                     <RowDefinition Height="0.5*"/>
-                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="1*"/>
                     <RowDefinition Height="0.5*"/>
 
 
@@ -43,15 +44,15 @@
                 <Label Grid.Row="1" Grid.Column="1" Name="labelEpisodes"  HorizontalAlignment="Right" Margin="10, 10,30,12 " Background="#212421" FontSize="24" FontFamily="Lato"  Foreground="#8c8080"/>
 
                 <Label Grid.Row="2" HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Country:" Foreground="#8c8080"/>
-                <Label Grid.Row="2" Grid.Column="1" Name="labelCountry" HorizontalAlignment="Right" Margin="10, 10,30,12 " Background="#212421" FontSize="24" FontFamily="Lato"  Foreground="#8c8080"/>
-                <Label Grid.Row="3" HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Cast:" Foreground="#8c8080"/>
-                <TextBlock TextWrapping="Wrap" Grid.Row="4" Foreground="#8c8080" Background="#212421" FontSize="24" FontFamily="Lato" Name="textBoxCast" Grid.ColumnSpan="2"  Margin="10,0"/>
-                <Button Height="30" Width="140" Name="buttonAdd" BorderThickness="0" Click="buttonAdd_Click" Grid.Column="0" Grid.Row="5">
+                <Label Grid.Row="3"  Grid.ColumnSpan="2" Grid.Column="0" Name="labelCountry" HorizontalAlignment="Left" Margin="10, 10,30,12 " Background="#212421" FontSize="24" FontFamily="Lato"  Foreground="#8c8080"/>
+                <Label Grid.Row="4" HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Cast:" Foreground="#8c8080"/>
+                <TextBlock TextWrapping="Wrap" Grid.Row="5" Foreground="#8c8080" Background="#212421" FontSize="24" FontFamily="Lato" Name="textBoxCast" Grid.ColumnSpan="2"  Margin="10,0"/>
+                <Button Height="30" Width="140" Name="buttonAdd" BorderThickness="0" Click="buttonAdd_Click" Grid.Column="0" Grid.Row="6">
                     <Button.Background>
                         <ImageBrush ImageSource="Resourses/Add2.png" Stretch="UniformToFill"/>
                     </Button.Background>
                 </Button>
-                <Button Height="30" Width="140" Name="buttonAddLater" BorderThickness="0" Click="buttonAddLater_Click" Grid.Column="1" Grid.Row="5"  VerticalAlignment="Center">
+                <Button Height="30" Width="140" Name="buttonAddLater" BorderThickness="0" Click="buttonAddLater_Click" Grid.Column="1" Grid.Row="6"  VerticalAlignment="Center">
                     <Button.Background>
                         <ImageBrush ImageSource="Resourses/AddLater.png" Stretch="UniformToFill"/>
                     </Button.Background>

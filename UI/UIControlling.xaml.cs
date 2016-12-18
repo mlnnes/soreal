@@ -35,13 +35,16 @@ namespace UI
             nowTvShow = _nowTvShow;
         }
 
+        public event Action<NowTvShows> OnAdd;
         private void ButtonAddEpisode_Click(object sender, RoutedEventArgs e)
         {
-            // вроде не сработет
+            
             try
             { 
                 tvShowManager.AddSeenEpisode(nowTvShow);
                 labelNowEpisode.Content = string.Format(" Seson {0}  episode {1}", nowTvShow.NowSeason, nowTvShow.NowEpisode);
+
+                OnAdd?.Invoke(nowTvShow);
 
             }
 

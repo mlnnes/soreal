@@ -290,3 +290,34 @@ C:\Projects\soreal1812\soreal\UI\obj\Debug\UISearch.baml
 C:\Projects\soreal1812\soreal\UI\obj\Debug\UI.g.resources
 C:\Projects\soreal1812\soreal\UI\obj\Debug\UI.Properties.Resources.resources
 C:\Projects\soreal1812\soreal\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\UI.exe.config
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI.exe
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI.pdb
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\UI.exe
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\UI.pdb
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\Logics.exe
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\Logics.pdb
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\EntityFramework.xml
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\Team Project\16182\UI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIAddNew.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIControlling.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIFirst.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIForApixaml.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIInfo.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIMain.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UISearch.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\App.g.cs
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI_MarkupCompile.cache
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI_MarkupCompile.lref
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIAddNew.baml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIControlling.baml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIFirst.baml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIForApixaml.baml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIInfo.baml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UIMain.baml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UISearch.baml
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI.g.resources
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\PC\Desktop\Team Project\16182\UI\obj\Debug\UI.csproj.GenerateResource.Cache
