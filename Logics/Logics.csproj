@@ -83,7 +83,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="RepositorySeed.cs" />
-    <Compile Include="RepositoryUser.cs" />
     <Compile Include="UserData\NowTvShows.cs" />
     <Compile Include="UserData\TvShowManager.cs" />
   </ItemGroup>

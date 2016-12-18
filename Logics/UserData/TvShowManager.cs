@@ -145,6 +145,13 @@ namespace Logics.UserData
 
                         if (nowTvShow.NowEpisode < item.NumberOfEpisodes)
                         {
+                            if (LaterTvShowsList.Contains(nowTvShow))
+                            {
+                                RemoveFromAList(nowTvShow);
+                                AddNowTvShow(nowTvShow);
+                                break;
+                            }
+
                             nowTvShow.NowEpisode += 1;
                             break;
                         }
@@ -161,13 +168,9 @@ namespace Logics.UserData
                                 var alr = new NowTvShows(nowTvShow.TvShow);
 
                                 alr.NowSeason = alr.TvShow.TotalNumberOfSeasons + 1;
+
                                 RemoveFromAList(nowTvShow);
-
-
                                 AddAlreadyTvShow(alr);
-
-
-                                context.SaveChanges();
 
                                 break;
                             }
@@ -216,73 +219,68 @@ namespace Logics.UserData
 
         public void GetUserDataBase()
         {
-            using (Context context = new Context())
-            {
-                alreadyTvShowsList = context.NowTvShows.Where(r => r.NowSeason > r.TvShow.TotalNumberOfSeasons).ToList();
-                foreach (var item in alreadyTvShowsList)
+            
+                using (Context context = new Context())
                 {
-                    foreach (var tvshow in context.TvShows.ToList())
+                    alreadyTvShowsList =
+                        context.NowTvShows.Where(r => r.NowSeason > r.TvShow.TotalNumberOfSeasons).ToList();
+                    foreach (var item in alreadyTvShowsList)
                     {
-                        if (item.Name == tvshow.Name && tvshow.Id < 51)
+                        foreach (var tvshow in context.TvShows.ToList())
                         {
-                            item.TvShow = tvshow;
+                            if (item.Name == tvshow.Name && tvshow.Id < 51)
+                            {
+                                item.TvShow = tvshow;
+                            }
                         }
                     }
-                }
 
 
-                laterTvShowsList = context.NowTvShows.Where(r => r.NowSeason == 0 && r.NowEpisode == 0).ToList();
+                    laterTvShowsList = context.NowTvShows.Where(r => r.NowSeason == 0 && r.NowEpisode == 0).ToList();
 
-                foreach (var item in laterTvShowsList)
-                {
-                    foreach (var tvshow in context.TvShows.ToList())
+                    foreach (var item in laterTvShowsList)
                     {
-                        if (item.Name == tvshow.Name && tvshow.Id < 51)
+                        foreach (var tvshow in context.TvShows.ToList())
                         {
-                            item.TvShow = tvshow;
+                            if (item.Name == tvshow.Name && tvshow.Id < 51)
+                            {
+                                item.TvShow = tvshow;
+                            }
                         }
                     }
-                }
 
 
-                nowTvShowsList =
-                    context.NowTvShows.Where(
-                            r =>
-                                r.NowSeason <= r.TvShow.TotalNumberOfSeasons &&
-                                !(r.NowSeason == 0 && r.NowEpisode == 0))
-                        .ToList();
+                    nowTvShowsList =
+                        context.NowTvShows.Where(
+                                r =>
+                                    r.NowSeason <= r.TvShow.TotalNumberOfSeasons &&
+                                    !(r.NowSeason == 0 && r.NowEpisode == 0))
+                            .ToList();
 
-                foreach (var item in nowTvShowsList)
-                {
-                    foreach (var tvshow in context.TvShows.ToList())
+                    foreach (var item in nowTvShowsList)
                     {
-                        if (item.Name == tvshow.Name && tvshow.Id < 51)
+                        foreach (var tvshow in context.TvShows.ToList())
                         {
-                            item.TvShow = tvshow;
+                            if (item.Name == tvshow.Name && tvshow.Id < 51)
+                            {
+                                item.TvShow = tvshow;
+                            }
                         }
                     }
+
+                    CheckUniqness();
+
                 }
-
-                CheckUniqness();
-
             }
-        }
+
+           
+        
+
+    
 
 
         public void CheckUniqness()
         {
-            //foreach (var item in AlreadyTvShowsList)
-            //{
-            //    foreach (var tvshow in NowTvShowsList)
-            //    {
-            //        if (item.Name == tvshow.Name)
-            //        {
-            //            NowTvShowsList.Remove(tvshow);
-
-            //        }
-
-            //    }
-            //}
 
             foreach (var item in AlreadyTvShowsList)
             {

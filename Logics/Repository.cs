@@ -58,11 +58,11 @@ namespace Logics
         {
             using (var context = new Context())
             {
-                foreach (var item in context.TvShows)
+                foreach (var item in context.TvShows.ToList())
                 {
                     if (item.Name == name)
                     {
-                        throw new ArgumentException("This TV Show already exists");
+                        throw new ArgumentException();
                     }
                 }
 

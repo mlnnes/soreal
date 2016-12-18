@@ -35,7 +35,6 @@ namespace UI
             
             UIInfo UIInfo = new UIInfo((TvShows)listBoxTvShows.SelectedItem, tvShowManager);
             UIInfo.Show();
-            //listBoxTvShows.SelectedItem
 
         }
 

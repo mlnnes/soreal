@@ -27,11 +27,7 @@ namespace Logics.UserData
 
             Name = nowTvShow.Name;
 
-            //this.TvShow.Name = nowTvShow.Name;
-            //this.TvShow.Cast = nowTvShow.Cast;
-            //this.TvShow.Country = nowTvShow.Country;
-            //this.TvShow.TotalNumberOfSeasons = nowTvShow.TotalNumberOfSeasons;
-            NowSeason = 0;
+            NowSeason = 1;
             NowEpisode = 0;
         }
 

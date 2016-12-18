@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,13 +20,20 @@ namespace UI
     /// </summary>
     public partial class UIMain : Window
     {
+        TvShowManager tvShowManager;
 
-        TvShowManager tvShowManager = new TvShowManager();
         public UIMain()
         {
             InitializeComponent();
-            //tvShowManager.OnAdding += tvshow => tvShowManager.LaterTvShowsList.Add(tvshow);
-    
+
+            try
+            {
+                tvShowManager = new TvShowManager();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
@@ -70,9 +78,8 @@ namespace UI
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-            
-            //вызов метода удаления из листа
-            //кстати можно событие приделать здесь
+            tvShowManager.RemoveFromAList((NowTvShows)listBoxMain.SelectedItem);
+            listBoxMain.Items.Refresh();
         }
     }
 }

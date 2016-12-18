@@ -21,7 +21,6 @@ namespace UI
     public partial class UIControlling : Window
     {
         TvShowManager tvShowManager;
-        //вот это плохо вроде
         NowTvShows nowTvShow;
 
         public UIControlling(NowTvShows _nowTvShow, TvShowManager _tvShowManager)
@@ -48,7 +47,7 @@ namespace UI
 
             }
 
-            catch (ArgumentException)// такой сериал уже есть эксепшн
+            catch (ArgumentException)
             {
                 MessageBox.Show("This TV Show is seen", "Error!", MessageBoxButton.OK,
                     MessageBoxImage.Error);
