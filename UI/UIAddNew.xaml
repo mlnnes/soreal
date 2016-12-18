@@ -49,14 +49,14 @@
                 <Label Grid.Row="3" HorizontalAlignment="Left" Margin="10" Background="#212421" FontSize="24" FontFamily="Lato" Content="Cast:" Foreground="#8c8080"/>
                 <TextBox Name="textBoxCast" TextWrapping="Wrap" Grid.Row="4"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#212421" FontSize="24" FontFamily="Lato" Foreground="#8c8080" Width="352"/>
 
-                <Button Name="buttonAddNew" Click="buttonAdd_Click" Grid.Column="0" Grid.Row="5" Margin="40,15">
+                <Button BorderThickness="0" Height="30" Width="140" Name="buttonAddNew" Click="buttonAdd_Click" Grid.Column="0" Grid.Row="5">
                     <Button.Background>
-                        <ImageBrush ImageSource="Resourses/AddButtonMenu3.png" Stretch="UniformToFill"/>
+                        <ImageBrush ImageSource="Resourses/Add2.png" Stretch="UniformToFill"/>
                     </Button.Background>
                 </Button>
-                <Button Name="buttonAddNewLater" Click="buttonAddLater_Click" Grid.Column="1" Grid.Row="5" Margin="40,15">
+                <Button BorderThickness="0" Height="30" Width="140" Name="buttonAddNewLater" Click="buttonAddLater_Click" Grid.Column="1" Grid.Row="5" >
                     <Button.Background>
-                        <ImageBrush ImageSource="Resourses/WillButton.png" Stretch="UniformToFill"/>
+                        <ImageBrush ImageSource="Resourses/AddLater.png" Stretch="UniformToFill"/>
                     </Button.Background>
                 </Button>
             </Grid>

@@ -180,6 +180,24 @@
     <Resource Include="Resourses\FindOnline.png" />
     <Resource Include="Resourses\Search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\InProcessButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DeleteButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\Add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\AddLater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\UpdateButton.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

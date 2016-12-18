@@ -17,9 +17,13 @@
 
         </Grid.RowDefinitions>
 
-        <Label Name="labelName" FontSize="14"  HorizontalAlignment="Right" Margin="10" FontFamily="Raleway" Foreground="#8c8080"/>
-        <Label Grid.Row="1" VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" Content="The last episode was:" Foreground="#8c8080" FontFamily="Lato"/>
-        <Label Name="labelNowEpisode" Grid.Row="1"  VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" Foreground="#8c8080" FontFamily="Lato"/>
-        <Button Name="ButtonAddEpisode" Grid.Row="2" Margin="300,10,10,10" Click="ButtonAddEpisode_Click"/>
+        <Label Name="labelName" FontSize="35"  HorizontalAlignment="Right" Margin="10" FontFamily="Raleway" Foreground="#8c8080"/>
+        <Label Margin="10" Grid.Row="1" VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Left" Content="The last episode was:" Foreground="#8c8080" FontFamily="Lato"/>
+        <Label Margin="10" Name="labelNowEpisode" Grid.Row="1"  VerticalAlignment="Center" FontSize="18" HorizontalAlignment="Right" Foreground="#8c8080" FontFamily="Lato"/>
+        <Button Name="ButtonAddEpisode" BorderThickness="0" Grid.Row="2" Height="20" Width="100" Click="ButtonAddEpisode_Click" HorizontalAlignment="Right" Margin="10,0">
+            <Button.Background>
+                <ImageBrush ImageSource="Resourses/UpdateButton.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
