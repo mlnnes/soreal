@@ -367,3 +367,18 @@ C:\Users\PC\Desktop\Team Project\18123\UI\obj\Debug\UISearch.baml
 C:\Users\PC\Desktop\Team Project\18123\UI\obj\Debug\UI.g.resources
 C:\Users\PC\Desktop\Team Project\18123\UI\obj\Debug\UI.Properties.Resources.resources
 C:\Users\PC\Desktop\Team Project\18123\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Projects\soreal1812\soreal\UI\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Projects\soreal1812\soreal\UI\bin\Debug\System.Windows.Interactivity.dll
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Projects\soreal1812\soreal\UI\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Projects\soreal1812\soreal\UI\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Projects\soreal1812\soreal\UI\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Projects\soreal1812\soreal\UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\soreal1812\soreal\UI\obj\Debug\App.baml

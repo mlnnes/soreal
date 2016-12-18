@@ -131,43 +131,58 @@ namespace Logics.UserData
         {
             using (var context = new Context())
             {
-                //var episode = nowTvShow.NowEpisode;
-                //var season = nowTvShow.NowSeason;
-                //var totalSeasons = nowTvShow.TvShow.TotalNumberOfSeasons;
-                var seasonsList = context.Seasons.Where(r => r.TvShow.Name == nowTvShow.TvShow.Name).ToList();
-
-                foreach (var item in seasonsList)
+                if (context.Seasons.Where(r => r.TvShow.Name == nowTvShow.TvShow.Name).ToList().Count != 0)
                 {
-                    //var totalEpisodes = item.NumberOfEpisodes;
+                    var seasonsList = context.Seasons.Where(r => r.TvShow.Name == nowTvShow.TvShow.Name).ToList();
 
-                    if (nowTvShow.NowEpisode < item.NumberOfEpisodes)
+                    foreach (var item in seasonsList)
                     {
-                        nowTvShow.NowEpisode += 1;
-                        break;
-                    }
-                    else
-                    {
-                        if (nowTvShow.NowSeason < nowTvShow.TvShow.TotalNumberOfSeasons)
+
+                        if (nowTvShow.NowEpisode < item.NumberOfEpisodes)
                         {
-                            nowTvShow.NowSeason += 1;
-                            nowTvShow.NowEpisode = 1;
+                            nowTvShow.NowEpisode += 1;
                             break;
                         }
                         else
                         {
-                            var alr = new NowTvShows(nowTvShow.TvShow);
+                            if (nowTvShow.NowSeason < nowTvShow.TvShow.TotalNumberOfSeasons)
+                            {
+                                nowTvShow.NowSeason += 1;
+                                nowTvShow.NowEpisode = 1;
+                                break;
+                            }
+                            else
+                            {
+                                var alr = new NowTvShows(nowTvShow.TvShow);
 
-                            alr.NowSeason = alr.TvShow.TotalNumberOfSeasons + 1;
-                            RemoveFromAList(nowTvShow);
+                                alr.NowSeason = alr.TvShow.TotalNumberOfSeasons + 1;
+                                RemoveFromAList(nowTvShow);
 
 
-                            AddAlreadyTvShow(alr);
-                            //удалить из бд
+                                AddAlreadyTvShow(alr);
 
-                            context.SaveChanges();
 
-                            break;
+                                context.SaveChanges();
+
+                                break;
+                            }
                         }
+                    }
+                }
+                else
+                {
+                    if (nowTvShow.NowEpisode < nowTvShow.TvShow.TotalNumberOfEpisodes)
+                    {
+                        nowTvShow.NowEpisode += 1;
+                    }
+                    else
+                    {
+                        var alr = new NowTvShows(nowTvShow.TvShow);
+
+                        alr.NowSeason = alr.TvShow.TotalNumberOfSeasons + 1;
+                        RemoveFromAList(nowTvShow);
+
+                        AddAlreadyTvShow(alr);
                     }
                 }
             }
