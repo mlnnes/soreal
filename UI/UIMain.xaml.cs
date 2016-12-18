@@ -41,7 +41,6 @@ namespace UI
         private void ButtonSeen_Click(object sender, RoutedEventArgs e)
         {
 
-
             listBoxMain.ItemsSource = tvShowManager.AlreadyTvShowsList;
         }
 
@@ -61,7 +60,7 @@ namespace UI
         {
             if (listBoxMain.SelectedItem is NowTvShows)
             {
-                UIControlling UIControlling = new UIControlling((NowTvShows)listBoxMain.SelectedItem);
+                UIControlling UIControlling = new UIControlling((NowTvShows)listBoxMain.SelectedItem, tvShowManager);
                 UIControlling.Show();
 
             }
@@ -70,6 +69,7 @@ namespace UI
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
+            
             //вызов метода удаления из листа
             //кстати можно событие приделать здесь
         }

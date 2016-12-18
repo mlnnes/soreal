@@ -20,22 +20,36 @@ namespace UI
     /// </summary>
     public partial class UIControlling : Window
     {
-        TvShowManager tvShowManager = new TvShowManager();
+        TvShowManager tvShowManager;
         //вот это плохо вроде
         NowTvShows nowTvShow;
-        public UIControlling(NowTvShows _nowTvShow)
+
+        public UIControlling(NowTvShows _nowTvShow, TvShowManager _tvShowManager)
         {
             InitializeComponent();
+
+            tvShowManager = _tvShowManager;
             labelName.Content = _nowTvShow.Name;
-            labelNowEpisode.Content = string.Format(" Seson {0}  episode {1}", _nowTvShow.NowSeason, _nowTvShow.NowEpisode);
+            labelNowEpisode.Content = string.Format(" Seson {0}  episode {1}", _nowTvShow.NowSeason,
+                _nowTvShow.NowEpisode);
             nowTvShow = _nowTvShow;
         }
 
         private void ButtonAddEpisode_Click(object sender, RoutedEventArgs e)
         {
             // вроде не сработет
-            tvShowManager.AddSeenEpisode(nowTvShow);
-            labelNowEpisode.Content = string.Format(" Seson {0}  episode {1}", nowTvShow.NowSeason, nowTvShow.NowEpisode);
+            try
+            { 
+                tvShowManager.AddSeenEpisode(nowTvShow);
+                labelNowEpisode.Content = string.Format(" Seson {0}  episode {1}", nowTvShow.NowSeason, nowTvShow.NowEpisode);
+
+            }
+
+            catch (ArgumentException)// такой сериал уже есть эксепшн
+            {
+                MessageBox.Show("This TV Show is seen", "Error!", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
 
         }
     }

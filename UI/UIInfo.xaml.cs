@@ -40,21 +40,29 @@ namespace UI
 
         private void buttonAddLater_Click(object sender, RoutedEventArgs e)
         {
-            var tvShow = new TvShows
+            try
             {
-                Name = (string)labelName.Content,
-                TotalNumberOfSeasons = (int)labelSeasons.Content,
-                TotalNumberOfEpisodes = (int)labelEpisodes.Content,
-                Country = (string)labelCountry.Content,
-                Cast = (string)textBoxCast.Text
+                var tvShow = new NowTvShows(new TvShows
+                {
+                    Name = (string) labelName.Content,
+                    TotalNumberOfSeasons = (int) labelSeasons.Content,
+                    TotalNumberOfEpisodes = (int) labelEpisodes.Content,
+                    Country = (string) labelCountry.Content,
+                    Cast = (string) textBoxCast.Text
 
-            };
+                });
 
 
-            tvShowManager.AddLaterTvShow(tvShow);
+                tvShowManager.AddLaterTvShow(tvShow);
 
-            this.Close();
-            
+                this.Close();
+            }
+
+            catch (ArgumentException)// такой сериал уже есть эксепшн
+            {
+                MessageBox.Show("This TV Show has already been added", "Error!", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
 
         }
 
@@ -64,22 +72,32 @@ namespace UI
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            tvShowManager.AddNowTvShow(new NowTvShows
-            (
-                   new TvShows
-                   {
-                       Name = (string)labelName.Content,
-                       TotalNumberOfSeasons = (int)labelSeasons.Content,
-                       TotalNumberOfEpisodes = (int)labelEpisodes.Content,
-                       Country = (string)labelCountry.Content,
-                       Cast = (string)labelCountry.Content
+            try
+            {
+                tvShowManager.AddNowTvShow(new NowTvShows
+                (
+                    new TvShows
+                    {
+                        Name = (string) labelName.Content,
+                        TotalNumberOfSeasons = (int) labelSeasons.Content,
+                        TotalNumberOfEpisodes = (int) labelEpisodes.Content,
+                        Country = (string) labelCountry.Content,
+                        Cast = (string) labelCountry.Content
 
-                   }
-                   
-            ));
+                    }
 
-            this.Close();
-            
+                ));
+
+                this.Close();
+            }
+
+            catch (ArgumentException)// такой сериал уже есть эксепшн
+            {
+                MessageBox.Show("This TV Show has already been added", "Error!", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+        
+
         }
 
        

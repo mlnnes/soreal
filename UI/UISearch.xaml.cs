@@ -2,6 +2,7 @@
 using Logics;
 using Logics.Data;
 using Logics.UserData;
+using System;
 
 namespace UI
 {
@@ -28,25 +29,28 @@ namespace UI
             try
             {
                 //возможно неэффективно
-                if (repository.SearchByName(textBoxSearch.Text) != null)
-                {
-                    listBoxTvShows.ItemsSource = repository.SearchByName(textBoxSearch.Text);
-                }
-                else
-                {
-                    listBoxTvShows.Items.Add("Nothing was found");
-                }
+               // if (repository.SearchByName(textBoxSearch.Text) != null)
+               // {
+               
+                // }
+                listBoxTvShows.ItemsSource = repository.SearchByName(textBoxSearch.Text);
+                // }
+                // else
+                // {
+                //    listBoxTvShows.Items.Add("Nothing was found");
+                // }
             }
-            catch (System.ArgumentNullException )
+            catch (ArgumentNullException)
             {
 
-                MessageBox.Show("Enter the name of TvShow");
+                MessageBox.Show("Enter the name of Tv Show", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
                 textBoxSearch.Clear();
             }
 
-            catch ( System.ArgumentOutOfRangeException)//не найдено экспешн
+            catch (ArgumentOutOfRangeException)//не найдено экспешн
             {
-
+                MessageBox.Show("Nothing was found:(", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
+                textBoxSearch.Clear();
             }
 
           

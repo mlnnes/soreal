@@ -61,22 +61,20 @@ namespace UI
                ));
                 this.Close();
             }
-            catch (ArgumentNullException)
+            catch (FormatException)
             {
 
-                MessageBox.Show("Error", "Put information intu all textboxes", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            catch (IndexOutOfRangeException)
-            {
-                MessageBox.Show("Error", "Put information correctly", MessageBoxButton.OK, MessageBoxImage.Error);
-            } 
-            
-            catch (Exception)// такой сериал уже есть эксепшн
-            {
-
+                MessageBox.Show("Put information into all textboxes correctly", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-            
+
+            catch (ArgumentException)// такой сериал уже есть эксепшн
+            {
+                MessageBox.Show("This TV Show has already been added", "Error!", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+
+
 
         }
 
@@ -87,7 +85,7 @@ namespace UI
                 repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
                int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
 
-                var tvShow = new TvShows
+                var tvShow = new NowTvShows(new TvShows 
                 {
                     Name = textBoxName.Text,
                     TotalNumberOfSeasons = int.Parse(textBoxSeasons.Text),
@@ -95,27 +93,27 @@ namespace UI
                     Country = textBoxCountry.Text,
                     Cast = textBoxCast.Text
 
-                };
+                });
 
 
                 tvShowManager.AddLaterTvShow(tvShow);
 
                 this.Close();
             }
-            catch (ArgumentNullException)
+
+            catch (FormatException)
             {
 
-                MessageBox.Show("Error", "Put information intu all textboxes", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            catch (IndexOutOfRangeException)
-            {
-                MessageBox.Show("Error", "Put information correctly", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Put information into all textboxes correctly", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-            catch (Exception)// такой сериал уже есть эксепшн
-            {
 
+            catch (ArgumentException)// такой сериал уже есть эксепшн
+            {
+                MessageBox.Show("This TV Show has already been added", "Error!", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
             }
+
 
         }
     }

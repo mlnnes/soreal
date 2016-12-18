@@ -45,7 +45,7 @@ namespace UI
             }
             catch (ArgumentNullException)
             {
-                MessageBox.Show("Error", "Write the name of the TvShow", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Nothing was found:( Enter another Tv Show, please.", "Error!" , MessageBoxButton.OK, MessageBoxImage.Error);
             }
           
         }

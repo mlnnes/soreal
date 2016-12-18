@@ -53,34 +53,43 @@ namespace Logics.API
         {
             var searchResults = GetSearchResults(title);
 
-            List <TvShows> searchList = new List<TvShows>();
-
-            foreach (var item in searchResults.Results)
+            if (searchResults.Results.Length != 0)
             {
-                string cast = "";
 
-                var tvShowDetails = GetDetails(item.Id);
+                List<TvShows> searchList = new List<TvShows>();
 
-                foreach (var actor in tvShowDetails.Credits.Cast)
+                foreach (var item in searchResults.Results)
                 {
-                    cast += actor.Name + ", ";
+                    string cast = "";
+
+                    var tvShowDetails = GetDetails(item.Id);
+
+                    foreach (var actor in tvShowDetails.Credits.Cast)
+                    {
+                        cast += actor.Name + ", ";
+                    }
+
+                    searchList.Add(new TvShows
+                    {
+                        Name = tvShowDetails.Name,
+                        TotalNumberOfEpisodes = tvShowDetails.Number_of_episodes,
+                        TotalNumberOfSeasons = tvShowDetails.Number_of_seasons,
+                        Cast = cast,
+                        Country = String.Join(", ", tvShowDetails.Countries)
+
+                    });
+
                 }
 
-                searchList.Add(new TvShows
-                {
-                    Name = tvShowDetails.Name,
-                    TotalNumberOfEpisodes = tvShowDetails.Number_of_episodes,
-                    TotalNumberOfSeasons = tvShowDetails.Number_of_seasons,
-                    Cast = cast,
-                    Country = String.Join(", ", tvShowDetails.Countries)
-
-                });
-
+                return searchList;
+            }
+            else
+            {
+                throw new ArgumentNullException();
             }
 
-            return searchList;
+
         }
-
-
+    }
 }
-}
+

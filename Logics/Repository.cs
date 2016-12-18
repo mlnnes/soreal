@@ -27,10 +27,25 @@ namespace Logics
 
         public List<TvShows> SearchByName(string name)
         {
-            using (var context = new Context())
+            if (name != String.Empty)
             {
-                var result = context.TvShows.Where(r => r.Name == name).ToList();
-                return result;
+                using (var context = new Context())
+                {
+                    var result = context.TvShows.Where(r => r.Name == name).ToList();
+
+                    if (result.Count != 0)
+                    {
+                        return result;
+                    }
+                    else
+                    {
+                        throw new ArgumentOutOfRangeException();
+                    }
+                }
+            }
+            else
+            {
+                throw new ArgumentNullException();
             }
         }
 

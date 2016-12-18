@@ -7,28 +7,26 @@ using Logics.Data;
 
 namespace Logics.UserData
 {
-     public class TvShowManager
+    public class TvShowManager
     {
 
-        List<TvShows> alreadyTvShowsList = new List<TvShows>();
-        
-        List<TvShows> laterTvShowsList = new List<TvShows>();
+        List<NowTvShows> alreadyTvShowsList = new List<NowTvShows>();
+
+        List<NowTvShows> laterTvShowsList = new List<NowTvShows>();
 
         List<NowTvShows> nowTvShowsList = new List<NowTvShows>();
 
 
-        public List<TvShows> AlreadyTvShowsList
+        public List<NowTvShows> AlreadyTvShowsList
         {
             get { return alreadyTvShowsList; }
             set { alreadyTvShowsList = value; }
         }
 
-        public List<TvShows> LaterTvShowsList
+        public List<NowTvShows> LaterTvShowsList
         {
             get { return laterTvShowsList; }
             set { laterTvShowsList = value; }
-
-
         }
 
         public List<NowTvShows> NowTvShowsList
@@ -37,48 +35,77 @@ namespace Logics.UserData
             set { nowTvShowsList = value; }
         }
 
+
         public void AddNowTvShow(NowTvShows nowTvShow)
         {
-            foreach (var item in nowTvShowsList)
+
+            if (nowTvShow != null)
             {
-                if (item.TvShow.Name  == nowTvShow.TvShow.Name)
+                foreach (var item in nowTvShowsList)
                 {
-                    throw new ArgumentException("This tv show is already in the list");
+                    if (item.TvShow.Name == nowTvShow.TvShow.Name)
+                    {
+                        throw new ArgumentException();
+                    }
                 }
+
+                nowTvShowsList.Add(nowTvShow);
+
             }
 
-            nowTvShowsList.Add(nowTvShow);
+            else
 
+            {
+                throw new FormatException();
+            }
         }
 
-        public void AddAlreadyTvShow(TvShows alreadyTvShow)
+
+        public void AddAlreadyTvShow(NowTvShows alreadyTvShow)
         {
-            foreach (var item in alreadyTvShowsList)
+            if (alreadyTvShow != null)
             {
-                if (item.Name == alreadyTvShow.Name)
+                foreach (var item in alreadyTvShowsList)
                 {
-                    throw new ArgumentException("This tv show is already in the list");
+                    if (item.Name == alreadyTvShow.Name)
+                    {
+                        throw new ArgumentException();
+                    }
                 }
-            }
 
-            alreadyTvShowsList.Add(alreadyTvShow);
+                AlreadyTvShowsList.Add(alreadyTvShow);
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
 
         }
 
-        public void AddLaterTvShow(TvShows laterTvShow)
+
+        public void AddLaterTvShow(NowTvShows laterTvShow)
         {
-            foreach (var item in laterTvShowsList)
+
+            if (laterTvShow != null)
             {
-                if (item.Name == laterTvShow.Name)
+                foreach (var item in laterTvShowsList)
                 {
-                    throw new ArgumentException("This event already exists");
+                    if (item.Name == laterTvShow.Name)
+                    {
+                        throw new ArgumentException();
+                    }
                 }
+
+                laterTvShowsList.Add(laterTvShow);
+
             }
 
-            laterTvShowsList.Add(laterTvShow);
+            else
 
+            {
+                throw new FormatException();
+            }
         }
-
 
         public void AddSeenEpisode(NowTvShows nowTvShow)
         {
@@ -108,15 +135,11 @@ namespace Logics.UserData
                         }
                         else
                         {
-                            var alr = new TvShows
-                            {
-                                Name = nowTvShow.TvShow.Name,
-                                Cast = nowTvShow.TvShow.Cast,
-                                Country = nowTvShow.TvShow.Country,
-                                TotalNumberOfSeasons = nowTvShow.TvShow.TotalNumberOfSeasons,
-                                TotalNumberOfEpisodes = nowTvShow.TvShow.TotalNumberOfEpisodes,
-                            };
-                            alreadyTvShowsList.Add(alr);
+                            var alr = new NowTvShows(nowTvShow.TvShow);
+
+                            RemoveFromAList(nowTvShow);
+                            AddAlreadyTvShow(alr);
+                            
                             break;
                         }
                     }
@@ -124,5 +147,24 @@ namespace Logics.UserData
             }
         }
 
+
+       
+
+        public void RemoveFromAList(NowTvShows nowTvShow)
+        {
+            if (NowTvShowsList.Contains(nowTvShow))
+            {
+                NowTvShowsList.Remove(nowTvShow);
+            }
+            if (AlreadyTvShowsList.Contains(nowTvShow))
+            {
+                AlreadyTvShowsList.Remove(nowTvShow);
+            }
+
+            if (LaterTvShowsList.Contains(nowTvShow))
+            {
+                LaterTvShowsList.Remove(nowTvShow);
+            }
+        }
     }
 }
