@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -198,23 +199,57 @@ namespace Logics.UserData
 
 
 
-
         public void RemoveFromAList(NowTvShows nowTvShow)
         {
-            if (NowTvShowsList.Contains(nowTvShow))
-            {
-                NowTvShowsList.Remove(nowTvShow);
-            }
-            if (AlreadyTvShowsList.Contains(nowTvShow))
-            {
-                AlreadyTvShowsList.Remove(nowTvShow);
-            }
 
-            if (LaterTvShowsList.Contains(nowTvShow))
+            using (var context = new Context())
             {
-                LaterTvShowsList.Remove(nowTvShow);
+
+
+                if (NowTvShowsList.Contains(nowTvShow))
+                {
+
+                    var result = NowTvShowsList.Find(r => r.TvShow.Id == nowTvShow.TvShow.Id);
+                    var tvshow = new TvShows() { Id = result.Id };
+                    context.TvShows.Attach(tvshow);
+                    context.Entry(tvshow).State = EntityState.Deleted;
+                    context.SaveChanges();
+
+                    var result2 = NowTvShowsList.Find(r => r.Id == nowTvShow.Id);
+                    var nowtvshow = new NowTvShows() { Id = result.Id };
+                    context.NowTvShows.Attach(nowtvshow);
+                    context.Entry(nowtvshow).State = EntityState.Deleted;
+                    context.SaveChanges();
+
+                    NowTvShowsList.Remove(nowTvShow);
+
+                    
+                  
+
+
+                    if (AlreadyTvShowsList.Contains(nowTvShow))
+                    {
+
+                        
+
+                        AlreadyTvShowsList.Remove(nowTvShow);
+
+                    }
+
+                    if (LaterTvShowsList.Contains(nowTvShow))
+                    {
+
+                     
+
+
+                        LaterTvShowsList.Remove(nowTvShow);
+
+                    }
+
+                }
             }
         }
+
 
 
         public void GetUserDataBase()
