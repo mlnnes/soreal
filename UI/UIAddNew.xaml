@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
        Title="SoReal" Height="600" Width="400"
-        Background="#212421" Icon="Resourses/2.png">
+        Background="#212421" Icon="Resourses/2.png"
+        WindowStartupLocation="CenterOwner">
     <Grid>
 
         <Grid.RowDefinitions>

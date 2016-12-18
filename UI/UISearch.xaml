@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
         Title="SoReal" Height="250" Width="400"
-        Background="#212421" Icon="Resourses/2.png">
+        Background="#212421" Icon="Resourses/2.png"
+        WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -28,7 +29,7 @@
 
         </Button>
 
-        <ListBox  x:Name="listBoxTvShows" Foreground="#8c8080" Background="#212421"  Grid.Row="1" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3"  HorizontalAlignment="Center"  BorderThickness="0"  VerticalAlignment="Center"  Margin="10" Height="111" Width="372" SelectionChanged="listBoxTvShows_SelectionChanged"   >
+        <ListBox  x:Name="listBoxTvShows"  SelectionChanged="listBoxTvShows_SelectionChanged" Foreground="#8c8080" Background="#212421"  Grid.Row="1" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3"  HorizontalAlignment="Center"  BorderThickness="0"  VerticalAlignment="Center"  Margin="10" Height="111" Width="372"   >
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical">

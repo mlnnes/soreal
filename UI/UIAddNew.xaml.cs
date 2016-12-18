@@ -37,51 +37,85 @@ namespace UI
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
-            repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
+            try
+            {
+                repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
                 int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
 
 
-            tvShowManager.AddNowTvShow(new NowTvShows
-           (
-                  new TvShows
-                  {
+                tvShowManager.AddNowTvShow(new NowTvShows
+               (
+                      new TvShows
+                      {
 
 
-                      Name = textBoxName.Text,
-                      TotalNumberOfSeasons = int.Parse(textBoxSeasons.Text),
-                      TotalNumberOfEpisodes = int.Parse(textBoxEpisodes.Text),
-                      Country = textBoxCountry.Text,
-                      Cast = textBoxCast.Text
+                          Name = textBoxName.Text,
+                          TotalNumberOfSeasons = int.Parse(textBoxSeasons.Text),
+                          TotalNumberOfEpisodes = int.Parse(textBoxEpisodes.Text),
+                          Country = textBoxCountry.Text,
+                          Cast = textBoxCast.Text
 
-                  }
+                      }
 
 
-           ));
+               ));
+                this.Close();
+            }
+            catch (ArgumentNullException)
+            {
 
-            this.Close();
+                MessageBox.Show("Error", "Put information intu all textboxes", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("Error", "Put information correctly", MessageBoxButton.OK, MessageBoxImage.Error);
+            } 
+            
+            catch (Exception)// такой сериал уже есть эксепшн
+            {
+
+            }
+
+            
 
         }
 
         private void buttonAddLater_Click(object sender, RoutedEventArgs e)
         {
-            repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
-                int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
-
-            var tvShow = new TvShows
+            try
             {
-                Name = textBoxName.Text,
-                TotalNumberOfSeasons = int.Parse(textBoxSeasons.Text),
-                TotalNumberOfEpisodes = int.Parse(textBoxEpisodes.Text),
-                Country = textBoxCountry.Text,
-                Cast = textBoxCast.Text
+                repository.AddTvShowToDataBase(textBoxName.Text, textBoxCountry.Text, textBoxCast.Text,
+               int.Parse(textBoxSeasons.Text), int.Parse(textBoxEpisodes.Text));
 
-            };
+                var tvShow = new TvShows
+                {
+                    Name = textBoxName.Text,
+                    TotalNumberOfSeasons = int.Parse(textBoxSeasons.Text),
+                    TotalNumberOfEpisodes = int.Parse(textBoxEpisodes.Text),
+                    Country = textBoxCountry.Text,
+                    Cast = textBoxCast.Text
+
+                };
 
 
-            tvShowManager.AddLaterTvShow(tvShow);
+                tvShowManager.AddLaterTvShow(tvShow);
 
-            this.Close();
+                this.Close();
+            }
+            catch (ArgumentNullException)
+            {
 
+                MessageBox.Show("Error", "Put information intu all textboxes", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("Error", "Put information correctly", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            catch (Exception)// такой сериал уже есть эксепшн
+            {
+
+            }
 
         }
     }

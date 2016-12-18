@@ -37,14 +37,17 @@ namespace UI
 
         private void ButtonSearchApi_Click(object sender, RoutedEventArgs e)
         {
-            if (apiRequests.GetAllResults(textBoxSearch.Text) != null)
+            try
             {
-                listBoxTvShowsApi.ItemsSource = apiRequests.GetAllResults(textBoxSearch.Text);
+                
+                    listBoxTvShowsApi.ItemsSource = apiRequests.GetAllResults(textBoxSearch.Text);
+               
             }
-            else
+            catch (ArgumentNullException)
             {
-                listBoxTvShowsApi.Items.Add("Nothing was found");
+                MessageBox.Show("Error", "Write the name of the TvShow", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+          
         }
 
         private void listBoxTvShowsApi_SelectionChanged(object sender, SelectionChangedEventArgs e)

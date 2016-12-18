@@ -25,11 +25,10 @@ namespace UI
 
         private void ButtonSearch_Click(object sender, RoutedEventArgs e)
         {
-
-
-            
+            try
+            {
                 //возможно неэффективно
-                if (repository.SearchByName(textBoxSearch.Text)!= null)
+                if (repository.SearchByName(textBoxSearch.Text) != null)
                 {
                     listBoxTvShows.ItemsSource = repository.SearchByName(textBoxSearch.Text);
                 }
@@ -37,28 +36,20 @@ namespace UI
                 {
                     listBoxTvShows.Items.Add("Nothing was found");
                 }
-                
-           
+            }
+            catch (System.ArgumentNullException )
+            {
 
+                MessageBox.Show("Enter the name of TvShow");
+                textBoxSearch.Clear();
+            }
 
-            //if (Repository.SearchByName() != null)
-            //{
-            //    ButtonSearchInternet.Visibility = Visibility.Hidden;
-            //    ButtonAddNew.Visibility = Visibility.Hidden;
+            catch ( System.ArgumentOutOfRangeException)//не найдено экспешн
+            {
 
-            //    for (int i = 0; i < Repository.SearchByName(textBoxSearch.Text).Count; i++)
-            //    {
-            //        listBoxTvShows.Items.Add(Repository.SearchByName(textBoxSearch.Text)[i]);
-            //    }
+            }
 
-
-            //}
-            //else
-            //{
-            //    ButtonSearchInternet.Visibility = Visibility.Visible;
-            //    ButtonAddNew.Visibility = Visibility.Visible;
-
-            //}
+          
 
         }
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -69,7 +60,7 @@ namespace UI
 
         private void listBoxTvShows_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            //не уверен что сработает
+            
             UIInfo UIInfo = new UIInfo((TvShows)listBoxTvShows.SelectedItem, tvShowManager);
             UIInfo.Show();
             //listBoxTvShows.SelectedItem
@@ -90,9 +81,6 @@ namespace UI
             //надо сделать апи
         }
 
-        private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
-        }
+        
     }
 }
