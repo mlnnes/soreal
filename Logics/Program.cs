@@ -10,6 +10,7 @@ namespace Logics
 {
     class Program
     {
+        //вспоминаю как делать коммиты блять
         static void Main(string[] args)
         {
 

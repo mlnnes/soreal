@@ -74,11 +74,11 @@ namespace UI.ViewModel
                     listTvShows.Add(item);
                 }
             }
-           
 
-           
 
-            
+
+
+
             catch (ArgumentNullException)
             {
 
@@ -92,6 +92,10 @@ namespace UI.ViewModel
                 //textBoxSearch.Clear();
             }
 
+            catch(FormatException)
+            {
+                MessageBox.Show("Enter the correct name of Tv Show", "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
 
 
         }

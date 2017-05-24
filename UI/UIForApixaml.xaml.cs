@@ -39,13 +39,20 @@ namespace UI
         {
             try
             {
-                
-                    listBoxTvShowsApi.ItemsSource = apiRequests.GetAllResults(textBoxSearch.Text);
-               
+
+                listBoxTvShowsApi.ItemsSource = apiRequests.GetAllResults(textBoxSearch.Text);
+
             }
             catch (ArgumentNullException)
             {
-                MessageBox.Show("Nothing was found:( Enter another Tv Show, please.", "Error!" , MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Nothing was found:( Enter another Tv Show, please.", "Error!", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Error!", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
             }
           
         }

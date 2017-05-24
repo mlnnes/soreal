@@ -153,8 +153,24 @@ namespace Logics.UserData
                                 break;
                             }
 
+
+                            var result = NowTvShowsList.Find(r => r.TvShow.Id == nowTvShow.TvShow.Id);
+                            var tvshow = new TvShows() { Id = result.Id };
+                            context.TvShows.Attach(tvshow);
+                            context.Entry(tvshow).State = EntityState.Deleted;
+                            context.SaveChanges();
+
+                            var result2 = NowTvShowsList.Find(r => r.Id == nowTvShow.Id);
+                            var nowtvshow = new NowTvShows() { Id = result.Id };
+                            context.NowTvShows.Attach(nowtvshow);
+                            context.Entry(nowtvshow).State = EntityState.Deleted;
+                            context.SaveChanges();
+
                             nowTvShow.NowEpisode += 1;
-                            break;
+                            context.NowTvShows.Add(nowTvShow);
+                            context.SaveChanges();
+                            
+                                break;
                         }
                         else
                         {
@@ -271,7 +287,7 @@ namespace Logics.UserData
                     }
 
 
-                    laterTvShowsList = context.NowTvShows.Where(r => r.NowSeason == 0 && r.NowEpisode == 0).ToList();
+                    laterTvShowsList = context.NowTvShows.Where(r => r.NowSeason == 1 && r.NowEpisode == 0).ToList();
 
                     foreach (var item in laterTvShowsList)
                     {
@@ -289,7 +305,7 @@ namespace Logics.UserData
                         context.NowTvShows.Where(
                                 r =>
                                     r.NowSeason <= r.TvShow.TotalNumberOfSeasons &&
-                                    !(r.NowSeason == 0 && r.NowEpisode == 0))
+                                    !(r.NowSeason == 1 && r.NowEpisode == 0))
                             .ToList();
 
                     foreach (var item in nowTvShowsList)
