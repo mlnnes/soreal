@@ -11,6 +11,7 @@ namespace Logics
     class Program
     {
         //вспоминаю как делать коммиты блять
+        //снова привет
         static void Main(string[] args)
         {
 

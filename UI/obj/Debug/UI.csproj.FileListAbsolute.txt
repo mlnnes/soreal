@@ -382,3 +382,6 @@ C:\Projects\soreal1812\soreal\UI\bin\Debug\Microsoft.Practices.ServiceLocation.p
 C:\Projects\soreal1812\soreal\UI\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Projects\soreal1812\soreal\UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Projects\soreal1812\soreal\UI\obj\Debug\App.baml
+C:\Projects\soreal2405\soreal\UI\bin\Debug\UI.exe.config
+C:\Projects\soreal2405\soreal\UI\obj\Debug\UI.exe
+C:\Projects\soreal2405\soreal\UI\obj\Debug\UI.pdb
